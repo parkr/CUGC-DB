@@ -1,3 +1,24 @@
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li>
+			<?php echo $this->Html->link(__('Edit Gift'), array('action' => 'edit', $gift['Gift']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete Gift'), array('action' => 'delete', $gift['Gift']['id']), null, __('Are you sure you want to delete # %s?', $gift['Gift']['id'])); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Gifts'), array('action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Gift'), array('action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Members'), array('controller' => 'members', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Member'), array('controller' => 'members', 'action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Accounts'), array('controller' => 'accounts', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Account'), array('controller' => 'accounts', 'action' => 'add')); ?>
+		</li>
+	</ul>
+</div>
 <div class="gifts view">
 <h2><?php  echo __('Gift');?></h2>
 	<dl>
@@ -32,17 +53,4 @@
 			&nbsp;
 		</dd>
 	</dl>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Gift'), array('action' => 'edit', $gift['Gift']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Gift'), array('action' => 'delete', $gift['Gift']['id']), null, __('Are you sure you want to delete # %s?', $gift['Gift']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Gifts'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Gift'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Members'), array('controller' => 'members', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Member'), array('controller' => 'members', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Accounts'), array('controller' => 'accounts', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Account'), array('controller' => 'accounts', 'action' => 'add')); ?> </li>
-	</ul>
 </div>

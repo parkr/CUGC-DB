@@ -122,14 +122,12 @@ p {
 div.form,
 div.index,
 div.view {
-	float:right;
-	width:76%;
-	border-left:1px solid #666;
+	width:97%;
+	//border-left:1px solid #666;
 	padding:10px 2%;
 }
 div.actions {
-	float:left;
-	width:16%;
+	width:96%;
 	padding:10px 1.5%;
 }
 div.actions h3 {
@@ -496,7 +494,7 @@ p.error em {
 
 /**  Actions  **/
 .actions ul {
-	margin: 0;
+	margin: -8px 0 0 -2px;
 	padding: 0;
 }
 .actions li {
@@ -504,6 +502,7 @@ p.error em {
 	list-style-type: none;
 	white-space: nowrap;
 	padding: 0;
+	display: inline-block;
 }
 .actions ul li a {
 	font-weight: normal;

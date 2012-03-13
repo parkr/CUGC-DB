@@ -1,3 +1,20 @@
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li>
+			<?php echo $this->Html->link(__('Edit Industry'), array('action' => 'edit', $industry['Industry']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete Industry'), array('action' => 'delete', $industry['Industry']['id']), null, __('Are you sure you want to delete # %s?', $industry['Industry']['id'])); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Industries'), array('action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Industry'), array('action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Occupations'), array('controller' => 'occupations', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Occupation'), array('controller' => 'occupations', 'action' => 'add')); ?>
+		</li>
+	</ul>
+</div>
 <div class="industries view">
 <h2><?php  echo __('Industry');?></h2>
 	<dl>
@@ -12,17 +29,6 @@
 			&nbsp;
 		</dd>
 	</dl>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Industry'), array('action' => 'edit', $industry['Industry']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Industry'), array('action' => 'delete', $industry['Industry']['id']), null, __('Are you sure you want to delete # %s?', $industry['Industry']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Industries'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Industry'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Occupations'), array('controller' => 'occupations', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Occupation'), array('controller' => 'occupations', 'action' => 'add')); ?> </li>
-	</ul>
 </div>
 <div class="related">
 	<h3><?php echo __('Related Occupations');?></h3>

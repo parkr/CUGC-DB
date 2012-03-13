@@ -17,6 +17,9 @@ body {
 
 #section_listing {
 	width: 66%;
+	ul li {
+		display: block;
+	}
 }
 
 #login_logout {

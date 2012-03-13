@@ -13,6 +13,7 @@ $websiteTitle = __('CUGC Alumni & Gift Database');
 		echo $this->Html->meta('icon', '/favicon.png', array('type' => 'image/png'));
 
 		echo $this->Html->css('cugcdb');
+		echo $this->Html->script('cugcdb');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -23,6 +24,13 @@ $websiteTitle = __('CUGC Alumni & Gift Database');
 	<div id="container">
 		<div id="header">
 			<h1><?php echo $this->Html->link($websiteTitle, '/'); ?></h1>
+			<?php
+				if(AuthComponent::user('id') > 0){
+					echo $this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout'), array('id' => 'login_logout'));
+				}else{
+					echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login'), array('id' => 'login_logout'));
+				}
+			?>
 		</div>
 		<div id="content">
 

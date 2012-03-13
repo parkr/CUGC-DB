@@ -858,3 +858,16 @@ body {
 /* line 18, ../../Sass/cugcdb.scss */
 #section_listing {
   width: 66%; }
+
+/* line 22, ../../Sass/cugcdb.scss */
+#login_logout {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 18px;
+  color: #e6e6e6;
+  text-decoration: none; }
+  /* line 29, ../../Sass/cugcdb.scss */
+  #login_logout:hover {
+    color: #fff;
+    text-decoration: underline; }

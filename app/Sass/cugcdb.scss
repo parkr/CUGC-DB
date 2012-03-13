@@ -18,3 +18,16 @@ body {
 #section_listing {
 	width: 66%;
 }
+
+#login_logout {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 18px;
+	color: darken(#fff, 10%);
+	text-decoration: none;
+	&:hover {
+		color: #fff;
+		text-decoration: underline;
+	}
+}

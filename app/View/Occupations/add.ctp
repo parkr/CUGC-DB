@@ -7,8 +7,8 @@
 		echo $this->Form->input('industry_id');
 		echo $this->Form->input('position');
 		echo $this->Form->input('company');
-		echo $this->Form->input('start_year');
-		echo $this->Form->input('end_year');
+		echo $this->Form->input('start_year', array('type' => 'number'));
+		echo $this->Form->input('end_year', array('type' => 'number'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit'));?>

@@ -7,6 +7,10 @@ App::uses('AppModel', 'Model');
  * @property Industry $Industry
  */
 class Occupation extends AppModel {
+	
+	public $virtualFields = array(
+		'occupation' => 'CONCAT(Occupation.position, ", ", Occupation.company)'
+	);
 /**
  * Display field
  *
@@ -60,16 +64,6 @@ class Occupation extends AppModel {
 			),
 		),
 		'start_year' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'end_year' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',

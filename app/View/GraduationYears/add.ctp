@@ -5,7 +5,7 @@
 	<?php
 		echo $this->Form->input('member_id');
 		echo $this->Form->input('degree');
-		echo $this->Form->input('year');
+		echo $this->Form->input('year', array('type' => 'number'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit'));?>

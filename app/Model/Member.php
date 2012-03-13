@@ -12,6 +12,12 @@ App::uses('AppModel', 'Model');
  * @property PhoneNumber $PhoneNumber
  */
 class Member extends AppModel {
+	
+	public $virtualFields = array(
+	    'name' => 'CONCAT(Member.first_name, " ", Member.last_name)',
+		'formal_name' => 'CONCAT(Member.last_name, ", ", Member.first_name)',
+	);
+	
 /**
  * Display field
  *
@@ -24,7 +30,7 @@ class Member extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'name' => array(
+		'first_name' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
@@ -34,7 +40,7 @@ class Member extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'things_to_note' => array(
+		'last_name' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
@@ -44,6 +50,7 @@ class Member extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+		
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed

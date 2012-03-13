@@ -6,10 +6,75 @@
 			<?php echo h($member['Member']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Name'); ?></dt>
+		<dt><?php echo __('First Name'); ?></dt>
 		<dd>
-			<?php echo h($member['Member']['name']); ?>
+			<?php echo h($member['Member']['first_name']); ?>
 			&nbsp;
+		</dd>
+		<dt><?php echo __('Last Name'); ?></dt>
+		<dd>
+			<?php echo h($member['Member']['last_name']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Emails'); ?></dt>
+		<dd>
+			<?php
+				$entities = array();
+				foreach($member['Email'] as $entity){
+					$entities[] = $entity['email'];
+				}
+				echo implode("<br>", $entities);
+			?>&nbsp;
+		</dd>
+		<dt><?php echo __('Grad Years'); ?></dt>
+		<dd>
+			<?php
+				$entities = array();
+				foreach($member['GraduationYear'] as $entity){
+					$entities[] = $entity['degree_year'];
+				}
+				echo implode("<br>", $entities);
+			?>&nbsp;
+		</dd>
+		<dt><?php echo __('Addresses'); ?></dt>
+		<dd>
+			<?php
+				$entities = array();
+				foreach($member['MailingAddress'] as $entity){
+					$entities[] = nl2br($entity['mailing_address']);
+				}
+				echo implode("<br><br>", $entities);
+			?>&nbsp;
+		</dd>
+		<dt><?php echo __('Occupations'); ?></dt>
+		<dd>
+			<?php
+				$entities = array();
+				foreach($member['Occupation'] as $entity){
+					$entities[] = $entity['occupation'];
+				}
+				echo implode("<br>", $entities);
+			?>&nbsp;
+		</dd>
+		<dt><?php echo __('Officer Positions'); ?></dt>
+		<dd>
+			<?php
+				$entities = array();
+				foreach($member['OfficerPosition'] as $entity){
+					$entities[] = $entity['officer_position'];
+				}
+				echo implode("<br>", $entities);
+			?>&nbsp;
+		</dd>
+		<dt><?php echo __('Phone Numbers'); ?></dt>
+		<dd>
+			<?php
+				$entities = array();
+				foreach($member['PhoneNumber'] as $entity){
+					$entities[] = $entity['phone_number'];
+				}
+				echo implode("<br>", $entities);
+			?>&nbsp;
 		</dd>
 		<dt><?php echo __('Things To Note'); ?></dt>
 		<dd>

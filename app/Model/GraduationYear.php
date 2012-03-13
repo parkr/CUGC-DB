@@ -6,6 +6,10 @@ App::uses('AppModel', 'Model');
  * @property Member $Member
  */
 class GraduationYear extends AppModel {
+	
+	public $virtualFields = array(
+		'degree_year' => 'CONCAT(GraduationYear.degree, ", ", GraduationYear.year)'
+	);
 /**
  * Display field
  *

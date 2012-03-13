@@ -6,6 +6,10 @@ App::uses('AppModel', 'Model');
  * @property Member $Member
  */
 class OfficerPosition extends AppModel {
+	
+	public $virtualFields = array(
+		'officer_position' => 'CONCAT(OfficerPosition.position, ", ", OfficerPosition.years)'
+	);
 /**
  * Display field
  *

@@ -1,0 +1,20 @@
+/** 
+ * This website created by 
+ * Parker Moore (http://www.parkermoore.de/) 
+ * for the Cornell University Glee Club. 
+ */
+
+@import "variables";
+@import "cake.generic";
+
+body {
+	background: image-url("bg-tile.jpg") repeat;
+}
+
+#routing {
+	font-size: 20px;
+}
+
+#section_listing {
+	width: 66%;
+}

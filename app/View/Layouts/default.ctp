@@ -10,9 +10,9 @@ $websiteTitle = __('CUGC Alumni & Gift Database');
 		<?php echo $websiteTitle; ?>
 	</title>
 	<?php
-		echo $this->Html->meta('icon');
+		echo $this->Html->meta('icon', '/favicon.png', array('type' => 'image/png'));
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('cugcdb');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

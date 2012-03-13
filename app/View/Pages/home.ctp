@@ -1,7 +1,7 @@
 <div id="section_listing" class="actions">
 <?php
 
-echo $this->Html->tag('h1', 'Select a section to edit:');
+echo $this->Html->tag('h2', 'Select a section to edit:');
 
 $links = array(
 	$this->Html->link('Members', 	array('controller' => 'members')),

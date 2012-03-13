@@ -871,3 +871,10 @@ body {
   #login_logout:hover {
     color: #fff;
     text-decoration: underline; }
+
+/* line 35, ../../Sass/cugcdb.scss */
+.note {
+  color: #aaa; }
+  /* line 37, ../../Sass/cugcdb.scss */
+  form .note {
+    margin-top: -20px; }

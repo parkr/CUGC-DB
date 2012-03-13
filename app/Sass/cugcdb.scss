@@ -31,3 +31,10 @@ body {
 		text-decoration: underline;
 	}
 }
+
+.note {
+	color: #aaa;
+	form & {
+		margin-top: -20px;
+	}
+}

@@ -5,6 +5,35 @@
 	<?php
 		echo $this->Form->input('first_name');
 		echo $this->Form->input('last_name');
+		
+		echo $this->Form->input('Email.email');
+		echo $this->Html->tag('div', 'Comma-separated emails', array('class' => 'note'));
+		
+		echo $this->Form->input('PhoneNumber.phone_number');
+		echo $this->Html->tag('div', 'Comma-separated phone numbers', array('class' => 'note'));
+		
+		echo $this->Html->tag('h4', 'Graduation Years');
+		echo $this->Form->input('GraduationYear.degree');
+		echo $this->Form->input('GraduationYear.year', array('type' => 'number', 'name' => 'data[GraduationYear][year]'));
+		echo $this->Html->tag('div', 'Year of graduation', array('class' => 'note'));
+		echo $this->Html->tag('div', 'Comma-separated degrees and years that correspond to each other (vertically)', array('class' => 'note'));
+		
+		echo $this->Html->tag('h4', 'Mailing Addresses');
+		echo $this->Form->input('MailingAddress.mailing_address');
+		echo $this->Form->input('MailingAddress.greater_city');
+		echo $this->Form->input('MailingAddress.state');
+		echo $this->Html->tag('div', 'SEMI-COLON-SEPARATED values that correspond to each other (vertically)', array('class' => 'note'));
+		
+		echo $this->Html->tag('h4', 'Occupations');
+		echo $this->Form->input('Occupation.position');
+		echo $this->Form->input('Occupation.company');
+		echo $this->Html->tag('div', 'Comma-separated values that correspond to each other (vertically)', array('class' => 'note'));
+		
+		echo $this->Html->tag('h4', 'Officer Positions');
+		echo $this->Form->input('OfficerPosition.position');
+		echo $this->Form->input('OfficerPosition.years');
+		echo $this->Html->tag('div', 'Comma-separated values that correspond to each other (vertically)', array('class' => 'note'));
+		
 		echo $this->Form->input('things_to_note');
 	?>
 	</fieldset>

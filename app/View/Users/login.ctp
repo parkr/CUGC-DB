@@ -8,7 +8,7 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Login'));?>
 <?php 
-echo $this->Form->postLink(
+$this->Form->postLink(
 	__('Forgot Password?'),
 	array('action' => 'forgot'), 
 	array('data-role' => 'button', 'data-icon' => 'info', 'data-theme' => 'b')

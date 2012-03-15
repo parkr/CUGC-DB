@@ -30,7 +30,7 @@ body {
 	margin: 0;
 }
 a {
-	color: #2c6977;
+	color: #0a4740;
 	text-decoration: underline;
 	font-weight: bold;
 }
@@ -446,29 +446,33 @@ p.error,
 .error-message {
 	clear: both;
 	color: #fff;
-	background: #c43c35;
+	$base_msg_colour: #6f1018;
+	$lighter_msg_colour: lighten($base_msg_colour, 15%);
+	background: $base_msg_colour;
 	border: 1px solid rgba(0, 0, 0, 0.5);
 	background-repeat: repeat-x;
-	background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
-	background-image: -ms-linear-gradient(top, #ee5f5b, #c43c35);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#ee5f5b), to(#c43c35));
-	background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
-	background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
-	background-image: linear-gradient(top, #ee5f5b, #c43c35);
+	background-image: -moz-linear-gradient(top, $lighter_msg_colour, $base_msg_colour);
+	background-image: -ms-linear-gradient(top, $lighter_msg_colour, $base_msg_colour);
+	background-image: -webkit-gradient(linear, left top, left bottom, from($lighter_msg_colour), to($base_msg_colour));
+	background-image: -webkit-linear-gradient(top, $lighter_msg_colour, $base_msg_colour);
+	background-image: -o-linear-gradient(top, $lighter_msg_colour, $base_msg_colour);
+	background-image: linear-gradient(top, $lighter_msg_colour, $base_msg_colour);
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
 .success {
 	clear: both;
 	color: #fff;
+	$base_msg_colour: #41501d;
+	$lighter_msg_colour: lighten($base_msg_colour, 15%);
+	background: $base_msg_colour;
 	border: 1px solid rgba(0, 0, 0, 0.5);
-	background: #3B8230;
 	background-repeat: repeat-x;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
-	background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
-	background-image: -moz-linear-gradient(top, #76BF6B, #3B8230);
-	background-image: -ms-linear-gradient(top, #76BF6B, #3B8230);
-	background-image: -o-linear-gradient(top, #76BF6B, #3B8230);
-	background-image: linear-gradient(top, #76BF6B, #3B8230);
+	background-image: -moz-linear-gradient(top, $lighter_msg_colour, $base_msg_colour);
+	background-image: -ms-linear-gradient(top, $lighter_msg_colour, $base_msg_colour);
+	background-image: -webkit-gradient(linear, left top, left bottom, from($lighter_msg_colour), to($base_msg_colour));
+	background-image: -webkit-linear-gradient(top, $lighter_msg_colour, $base_msg_colour);
+	background-image: -o-linear-gradient(top, $lighter_msg_colour, $base_msg_colour);
+	background-image: linear-gradient(top, $lighter_msg_colour, $base_msg_colour);
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
 p.error {

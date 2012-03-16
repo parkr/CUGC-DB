@@ -49,6 +49,23 @@ class MembersController extends AppController {
 			}
 		}
 	}
+	
+/**
+ * simple_add method
+ *
+ * @return void
+ */
+	public function simple_add() {
+		if ($this->request->is('post')) {
+			$this->Member->create();
+			if ($this->Member->save($this->request->data)) {
+				$this->Session->setFlash(__('The member has been saved'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The member could not be saved. Please, try again.'));
+			}
+		}
+	}
 
 /**
  * edit method
@@ -138,28 +155,28 @@ class MembersController extends AppController {
 			$i++;
 		}
 		// Parse mailing addresses, greater cities, states
-		$addresses['mailing_addresses'] = explode(';', $data['MailingAddress']['mailing_address']);
-		unset($data['MailingAddress']['mailing_address']);
-			
-		$addresses['greater_cities'] = explode(';', $data['MailingAddress']['greater_city']);
-		if(count($addresses['greater_cities']) == 1 && count($addresses['mailing_addresses']) > 1){
-			$addresses['greater_cities'] = explode(',', $data['MailingAddress']['greater_city']);
+		$addresses['street'] = explode(';', $data['MailingAddress']['street']);
+		unset($data['MailingAddress']['street']);
+		
+		$mailing_address_fields = array('city', 'greater_city', 'zip_code', 'state');
+		foreach($mailing_address_fields as $mailing_address_field){
+			$pluralized = Inflector::pluralize($mailing_address_field);
+			$addresses[$pluralized] = explode(';', $data['MailingAddress'][$mailing_address_field]);
+			if(count($addresses[$pluralized]) == 1 && count($addresses['street']) > 1){
+				$addresses['greater_cities'] = explode(',', $data['MailingAddress'][$mailing_address_field]);
+			}
+			unset($data['MailingAddress'][$mailing_address_field]);
+				
 		}
-		unset($data['MailingAddress']['greater_city']);
-			
-		$addresses['states'] = explode(';', $data['MailingAddress']['state']);
-		if(count($addresses['states']) == 1 && count($addresses['mailing_addresses']) > 1){
-			$addresses['states'] = explode(',', $data['MailingAddress']['state']);
-		}
-		unset($data['MailingAddress']['state']);
-			
+		
 		$i = 0;
-		foreach($addresses['mailing_addresses'] as $mailing_address){
+		foreach($addresses['street'] as $mailing_address){
 			$data['MailingAddress'][$i] = array(
-				'mailing_address' => trim($mailing_address),
-				'greater_city' => trim(@$addresses['greater_cities'][$i]),
-				'state' => trim(@$addresses['states'][$i]),
+				'street' => trim($mailing_address)
 			);
+			foreach($mailing_address_fields as $mailing_address_field){
+				$data['MailingAddress'][$i][$mailing_address_field] = $addresses[Inflector::pluralize($mailing_address_field)][$i];
+			}
 			$i++;
 		}
 		// Parse occupations: positions, years

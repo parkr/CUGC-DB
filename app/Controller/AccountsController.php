@@ -14,7 +14,6 @@ class AccountsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Account->recursive = 0;
 		$this->set('accounts', $this->paginate());
 	}
 

@@ -44,7 +44,7 @@
 		</dd>
 		<dt><?php echo __('Amount'); ?></dt>
 		<dd>
-			<?php echo h($gift['Gift']['amount']); ?>
+			<?php echo $this->Number->currency($gift['Gift']['amount']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Description'); ?></dt>

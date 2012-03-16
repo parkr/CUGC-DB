@@ -1,11 +1,45 @@
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li>
+			<?php echo $this->Html->link(__('Edit Member'), array('action' => 'edit', $member['Member']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete Member'), array('action' => 'delete', $member['Member']['id']), null, __('Are you sure you want to delete # %s?', $member['Member']['id'])); ?>
+			<?php echo $this->Html->link(__('List Members'), array('action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Member'), array('action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Emails'), array('controller' => 'emails', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Email'), array('controller' => 'emails', 'action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Gifts'), array('controller' => 'gifts', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Gift'), array('controller' => 'gifts', 'action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Graduation Years'), array('controller' => 'graduation_years', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Graduation Year'), array('controller' => 'graduation_years', 'action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Addresses'), array('controller' => 'mailing_addresses', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Address'), array('controller' => 'mailing_addresses', 'action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Occupations'), array('controller' => 'occupations', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Occupation'), array('controller' => 'occupations', 'action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Officer Positions'), array('controller' => 'officer_positions', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Officer Position'), array('controller' => 'officer_positions', 'action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Phone Numbers'), array('controller' => 'phone_numbers', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('New Phone Number'), array('controller' => 'phone_numbers', 'action' => 'add')); ?>
+		</li>
+	</ul>
+</div>
 <div class="members view">
 <h2><?php  echo __('Member');?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($member['Member']['id']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('First Name'); ?></dt>
 		<dd>
 			<?php echo h($member['Member']['first_name']); ?>
@@ -16,35 +50,32 @@
 			<?php echo h($member['Member']['last_name']); ?>
 			&nbsp;
 		</dd>
+		<?php
+			$giving = array( 'cumulative' => 0 );
+			foreach($member['Gift'] as $gift){
+				$giving['cumulative'] += $gift['amount'];
+				if(!isset($giving[$gift['Account']['name']])) { $giving[$gift['Account']['name']] = 0; }
+				$giving[$gift['Account']['name']] += $gift['amount'];
+			}
+		?>
+		<dt><?php echo __('Cumulative Giving'); ?></dt>
+		<dd>
+			<?php echo $this->Number->currency($giving['cumulative']); ?>
+			&nbsp;
+		</dd>
+		<?php foreach($accounts as $account): ?>
+		<dt><?php echo __('Giving to '.$account['Account']['name']); ?></dt>
+		<dd>
+			<?php echo $this->Number->currency($giving[$account['Account']['name']]); ?>
+			&nbsp;
+		</dd>	
+		<?php endforeach; ?>
 		<dt><?php echo __('Things To Note'); ?></dt>
 		<dd>
 			<?php echo h($member['Member']['things_to_note']); ?>
 			&nbsp;
 		</dd>
 	</dl>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Member'), array('action' => 'edit', $member['Member']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Member'), array('action' => 'delete', $member['Member']['id']), null, __('Are you sure you want to delete # %s?', $member['Member']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Members'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Member'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Emails'), array('controller' => 'emails', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Email'), array('controller' => 'emails', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Gifts'), array('controller' => 'gifts', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Gift'), array('controller' => 'gifts', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Graduation Years'), array('controller' => 'graduation_years', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Graduation Year'), array('controller' => 'graduation_years', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Mailing Addresses'), array('controller' => 'mailing_addresses', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Mailing Address'), array('controller' => 'mailing_addresses', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Occupations'), array('controller' => 'occupations', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Occupation'), array('controller' => 'occupations', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Officer Positions'), array('controller' => 'officer_positions', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Officer Position'), array('controller' => 'officer_positions', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Phone Numbers'), array('controller' => 'phone_numbers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Phone Number'), array('controller' => 'phone_numbers', 'action' => 'add')); ?> </li>
-	</ul>
 </div>
 <div class="related">
 	<h3><?php echo __('Related Emails');?></h3>
@@ -100,7 +131,7 @@
 			<td><?php echo $gift['member_id'];?></td>
 			<td><?php echo $gift['account_id'];?></td>
 			<td><?php echo $gift['date'];?></td>
-			<td><?php echo $gift['amount'];?></td>
+			<td><?php echo $this->Number->currency($gift['amount']);?></td>
 			<td><?php echo $gift['description'];?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'gifts', 'action' => 'view', $gift['id'])); ?>

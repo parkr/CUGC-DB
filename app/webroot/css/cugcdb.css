@@ -278,7 +278,7 @@ table td.actions a {
 dl {
   line-height: 2em;
   margin: 0em 0em;
-  width: 60%; }
+  width: 100%; }
 
 /* line 246, ../../Sass/_cake.generic.scss */
 dl dd:nth-child(4n+2),
@@ -290,11 +290,11 @@ dt {
   font-weight: bold;
   padding-left: 4px;
   vertical-align: top;
-  width: 10em; }
+  width: 14em; }
 
 /* line 256, ../../Sass/_cake.generic.scss */
 dd {
-  margin-left: 10em;
+  margin-left: 14em;
   margin-top: -2em;
   vertical-align: top; }
 
@@ -639,10 +639,12 @@ input[type=submit]:active,
 /* line 569, ../../Sass/_cake.generic.scss */
 .related {
   clear: both;
-  display: block; }
+  display: block;
+  width: 97%;
+  padding: 10px 2%; }
 
 /** Debugging **/
-/* line 575, ../../Sass/_cake.generic.scss */
+/* line 577, ../../Sass/_cake.generic.scss */
 pre {
   color: #000;
   background: #f0f0f0;
@@ -651,12 +653,12 @@ pre {
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
 
-/* line 583, ../../Sass/_cake.generic.scss */
+/* line 585, ../../Sass/_cake.generic.scss */
 .cake-debug-output {
   padding: 0;
   position: relative; }
 
-/* line 587, ../../Sass/_cake.generic.scss */
+/* line 589, ../../Sass/_cake.generic.scss */
 .cake-debug-output > span {
   position: absolute;
   top: 5px;
@@ -674,22 +676,22 @@ pre {
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.5);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); }
 
-/* line 605, ../../Sass/_cake.generic.scss */
+/* line 607, ../../Sass/_cake.generic.scss */
 .cake-debug,
 .cake-error {
   font-size: 16px;
   line-height: 20px;
   clear: both; }
 
-/* line 610, ../../Sass/_cake.generic.scss */
+/* line 612, ../../Sass/_cake.generic.scss */
 .cake-error > a {
   text-shadow: none; }
 
-/* line 613, ../../Sass/_cake.generic.scss */
+/* line 615, ../../Sass/_cake.generic.scss */
 .cake-error {
   white-space: normal; }
 
-/* line 616, ../../Sass/_cake.generic.scss */
+/* line 618, ../../Sass/_cake.generic.scss */
 .cake-stack-trace {
   background: rgba(255, 255, 255, 0.7);
   color: #333;
@@ -703,7 +705,7 @@ pre {
   -webkit-border-radius: 4px;
   border-radius: 4px; }
 
-/* line 629, ../../Sass/_cake.generic.scss */
+/* line 631, ../../Sass/_cake.generic.scss */
 .cake-stack-trace a {
   text-shadow: none;
   background: rgba(255, 255, 255, 0.7);
@@ -721,16 +723,16 @@ pre {
   -webkit-box-shadow: inset 0px 1px 0 rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 1px 0 rgba(0, 0, 0, 0.3); }
 
-/* line 646, ../../Sass/_cake.generic.scss */
+/* line 648, ../../Sass/_cake.generic.scss */
 .cake-code-dump pre {
   position: relative;
   overflow: auto; }
 
-/* line 650, ../../Sass/_cake.generic.scss */
+/* line 652, ../../Sass/_cake.generic.scss */
 .cake-context {
   margin-bottom: 10px; }
 
-/* line 653, ../../Sass/_cake.generic.scss */
+/* line 655, ../../Sass/_cake.generic.scss */
 .cake-stack-trace pre {
   color: #000;
   background-color: #F0F0F0;
@@ -739,7 +741,7 @@ pre {
   overflow: auto;
   text-shadow: none; }
 
-/* line 661, ../../Sass/_cake.generic.scss */
+/* line 663, ../../Sass/_cake.generic.scss */
 .cake-stack-trace li {
   padding: 10px 5px 0px;
   margin: 0 0 4px 0;
@@ -757,7 +759,7 @@ pre {
   background-image: linear-gradient(top, #fefefe, #dcdcdc); }
 
 /* excerpt */
-/* line 679, ../../Sass/_cake.generic.scss */
+/* line 681, ../../Sass/_cake.generic.scss */
 .cake-code-dump pre,
 .cake-code-dump pre code {
   clear: both;
@@ -767,30 +769,30 @@ pre {
   padding: 4px;
   overflow: auto; }
 
-/* line 687, ../../Sass/_cake.generic.scss */
+/* line 689, ../../Sass/_cake.generic.scss */
 .cake-code-dump .code-highlight {
   display: block;
   background-color: rgba(255, 255, 0, 0.5); }
 
-/* line 691, ../../Sass/_cake.generic.scss */
+/* line 693, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.code-line {
   padding-left: 5px;
   display: block;
   margin-left: 10px; }
 
-/* line 696, ../../Sass/_cake.generic.scss */
+/* line 698, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.uncovered span.content {
   background: #ecc; }
 
-/* line 699, ../../Sass/_cake.generic.scss */
+/* line 701, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.covered span.content {
   background: #cec; }
 
-/* line 702, ../../Sass/_cake.generic.scss */
+/* line 704, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.ignored span.content {
   color: #aaa; }
 
-/* line 705, ../../Sass/_cake.generic.scss */
+/* line 707, ../../Sass/_cake.generic.scss */
 .code-coverage-results span.line-num {
   color: #666;
   display: block;
@@ -799,49 +801,49 @@ pre {
   text-align: right;
   margin-right: 5px; }
 
-/* line 713, ../../Sass/_cake.generic.scss */
+/* line 715, ../../Sass/_cake.generic.scss */
 .code-coverage-results span.line-num strong {
   color: #666; }
 
-/* line 716, ../../Sass/_cake.generic.scss */
+/* line 718, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.start {
   border: 1px solid #aaa;
   border-width: 1px 1px 0px 1px;
   margin-top: 30px;
   padding-top: 5px; }
 
-/* line 722, ../../Sass/_cake.generic.scss */
+/* line 724, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.end {
   border: 1px solid #aaa;
   border-width: 0px 1px 1px 1px;
   margin-bottom: 30px;
   padding-bottom: 5px; }
 
-/* line 728, ../../Sass/_cake.generic.scss */
+/* line 730, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.realstart {
   margin-top: 0px; }
 
-/* line 731, ../../Sass/_cake.generic.scss */
+/* line 733, ../../Sass/_cake.generic.scss */
 .code-coverage-results p.note {
   color: #bbb;
   padding: 5px;
   margin: 5px 0 10px;
   font-size: 10px; }
 
-/* line 737, ../../Sass/_cake.generic.scss */
+/* line 739, ../../Sass/_cake.generic.scss */
 .code-coverage-results span.result-bad {
   color: #a00; }
 
-/* line 740, ../../Sass/_cake.generic.scss */
+/* line 742, ../../Sass/_cake.generic.scss */
 .code-coverage-results span.result-ok {
   color: #fa0; }
 
-/* line 743, ../../Sass/_cake.generic.scss */
+/* line 745, ../../Sass/_cake.generic.scss */
 .code-coverage-results span.result-good {
   color: #0a0; }
 
 /** Elements **/
-/* line 748, ../../Sass/_cake.generic.scss */
+/* line 750, ../../Sass/_cake.generic.scss */
 #url-rewriting-warning {
   display: none; }
 

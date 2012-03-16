@@ -12,17 +12,25 @@
 	<h2><?php echo __('Accounts');?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('name');?></th>
 			<th><?php echo $this->Paginator->sort('account_number');?></th>
+			<th><?php echo __('Cumulative Gifts'); ?></th>
 			<th class="actions"><?php echo __('Actions');?></th>
 	</tr>
 	<?php
 	foreach ($accounts as $account): ?>
 	<tr>
-		<td><?php echo h($account['Account']['id']); ?>&nbsp;</td>
 		<td><?php echo h($account['Account']['name']); ?>&nbsp;</td>
 		<td><?php echo h($account['Account']['account_number']); ?>&nbsp;</td>
+		<td>
+			<?php 
+				$total=0; 
+				foreach($account['Gift'] as $gift){
+					$total += $gift['amount'];
+				}
+				echo $this->Number->currency($total);
+			?>
+		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $account['Account']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $account['Account']['id'])); ?>

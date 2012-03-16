@@ -19,11 +19,6 @@
 <div class="accounts view">
 <h2><?php  echo __('Account');?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($account['Account']['id']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Name'); ?></dt>
 		<dd>
 			<?php echo h($account['Account']['name']); ?>
@@ -34,6 +29,17 @@
 			<?php echo h($account['Account']['account_number']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Total Gifts'); ?></dt>
+		<dd>
+			<?php 
+				$total=0; 
+				foreach($account['Gift'] as $gift){
+					$total += $gift['amount'];
+				}
+				echo $this->Number->currency($total);
+			?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="related">
@@ -41,9 +47,8 @@
 	<?php if (!empty($account['Gift'])):?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Member Id'); ?></th>
-		<th><?php echo __('Account Id'); ?></th>
+		<th><?php echo __('Account'); ?></th>
 		<th><?php echo __('Date'); ?></th>
 		<th><?php echo __('Amount'); ?></th>
 		<th><?php echo __('Description'); ?></th>
@@ -53,9 +58,8 @@
 		$i = 0;
 		foreach ($account['Gift'] as $gift): ?>
 		<tr>
-			<td><?php echo $gift['id'];?></td>
 			<td><?php echo $gift['member_id'];?></td>
-			<td><?php echo $gift['account_id'];?></td>
+			<td><?php echo $account['Account']['name'];?></td>
 			<td><?php echo $gift['date'];?></td>
 			<td><?php echo $gift['amount'];?></td>
 			<td><?php echo $gift['description'];?></td>

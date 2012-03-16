@@ -16,7 +16,6 @@
 	<h2><?php echo __('Gifts');?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('member_id');?></th>
 			<th><?php echo $this->Paginator->sort('account_id');?></th>
 			<th><?php echo $this->Paginator->sort('date');?></th>
@@ -27,7 +26,6 @@
 	<?php
 	foreach ($gifts as $gift): ?>
 	<tr>
-		<td><?php echo h($gift['Gift']['id']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($gift['Member']['name'], array('controller' => 'members', 'action' => 'view', $gift['Member']['id'])); ?>
 		</td>
@@ -35,7 +33,7 @@
 			<?php echo $this->Html->link($gift['Account']['name'], array('controller' => 'accounts', 'action' => 'view', $gift['Account']['id'])); ?>
 		</td>
 		<td><?php echo h($gift['Gift']['date']); ?>&nbsp;</td>
-		<td><?php echo h($gift['Gift']['amount']); ?>&nbsp;</td>
+		<td><?php echo $this->Number->currency($gift['Gift']['amount']); ?>&nbsp;</td>
 		<td><?php echo h($gift['Gift']['description']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $gift['Gift']['id'])); ?>

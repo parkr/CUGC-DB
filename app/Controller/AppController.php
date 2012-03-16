@@ -33,6 +33,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 	
+	public $helpers = array('Form', 'Html', 'Js', 'Time', 'Number', 'Session', 'RSS', 'Paginator', 'Cache');
     public $components = array(
         'Session',
         'Auth' => array(

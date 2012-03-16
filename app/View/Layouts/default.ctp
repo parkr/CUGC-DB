@@ -40,7 +40,7 @@ $websiteTitle = __('CUGC Alumni & Gift Database');
 		</div>
 		<div id="footer">
 			<?php echo $this->Html->link(
-					"Website, Database by Parker Moore",
+					"Website &amp; Database by Parker Moore",
 					'http://www.parkermoore.de/',
 					array('target' => '_blank', 'escape' => false)
 				);

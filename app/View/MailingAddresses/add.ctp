@@ -14,8 +14,12 @@
 		<legend><?php echo __('Add Mailing Address'); ?></legend>
 	<?php
 		echo $this->Form->input('member_id');
-		echo $this->Form->input('mailing_address');
+		echo $this->Form->input('street');
+		echo $this->Form->input('city');
 		echo $this->Form->input('greater_city');
+		echo $this->Form->input('state');
+		echo $this->Form->input('zip_code');
+		echo $this->Form->input('country');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit'));?>

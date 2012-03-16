@@ -14,8 +14,12 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('member_id');?></th>
-			<th><?php echo $this->Paginator->sort('mailing_address');?></th>
+			<th><?php echo $this->Paginator->sort('street');?></th>
+			<th><?php echo $this->Paginator->sort('city');?></th>
 			<th><?php echo $this->Paginator->sort('greater_city');?></th>
+			<th><?php echo $this->Paginator->sort('state');?></th>
+			<th><?php echo $this->Paginator->sort('zip_code');?></th>
+			<th><?php echo $this->Paginator->sort('country');?></th>
 			<th class="actions"><?php echo __('Actions');?></th>
 	</tr>
 	<?php
@@ -25,8 +29,12 @@
 		<td>
 			<?php echo $this->Html->link($mailingAddress['Member']['name'], array('controller' => 'members', 'action' => 'view', $mailingAddress['Member']['id'])); ?>
 		</td>
-		<td><?php echo h($mailingAddress['MailingAddress']['mailing_address']); ?>&nbsp;</td>
+		<td><?php echo h($mailingAddress['MailingAddress']['street']); ?>&nbsp;</td>
+		<td><?php echo h($mailingAddress['MailingAddress']['city']); ?>&nbsp;</td>
 		<td><?php echo h($mailingAddress['MailingAddress']['greater_city']); ?>&nbsp;</td>
+		<td><?php echo h($mailingAddress['MailingAddress']['state']); ?>&nbsp;</td>
+		<td><?php echo h($mailingAddress['MailingAddress']['zip_code']); ?>&nbsp;</td>
+		<td><?php echo h($mailingAddress['MailingAddress']['country']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $mailingAddress['MailingAddress']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $mailingAddress['MailingAddress']['id'])); ?>

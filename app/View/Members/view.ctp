@@ -52,6 +52,7 @@
 		</dd>
 		<?php
 			$giving = array( 'cumulative' => 0 );
+			foreach($accounts as $acct){ $giving[$acct['Account']['name']] = 0; }
 			foreach($member['Gift'] as $gift){
 				$giving['cumulative'] += $gift['amount'];
 				if(!isset($giving[$gift['Account']['name']])) { $giving[$gift['Account']['name']] = 0; }

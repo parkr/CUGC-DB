@@ -19,7 +19,7 @@
 		echo $this->Form->input('greater_city');
 		echo $this->Form->input('state');
 		echo $this->Form->input('zip_code');
-		echo $this->Form->input('country');
+		echo $this->Form->input('country', array('value' => 'USA'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit'));?>

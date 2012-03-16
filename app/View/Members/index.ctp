@@ -35,10 +35,6 @@
 			<th><?php echo $this->Paginator->sort('first_name');?></th>
 			<th><?php echo $this->Paginator->sort('last_name');?></th>
 			<th><?php echo __("Emails"); ?></th>
-			<th><?php echo __("Graduation Years"); ?></th>
-			<th><?php echo __("Mailing Addresses"); ?></th>
-			<th><?php echo __("Occupations"); ?></th>
-			<th><?php echo __("Officer Positions"); ?></th>
 			<th><?php echo __("Phone Number"); ?></th>
 			<th><?php echo __('Things to Note');?></th>
 			<th class="actions"><?php echo __('Actions');?></th>
@@ -53,42 +49,6 @@
 				$entities = array();
 				foreach($member['Email'] as $entity){
 					$entities[] = $entity['email'];
-				}
-				echo implode("<br>", $entities);
-			?>&nbsp;
-		</td>
-		<td>
-			<?php
-				$entities = array();
-				foreach($member['GraduationYear'] as $entity){
-					$entities[] = $entity['degree_year'];
-				}
-				echo implode("<br>", $entities);
-			?>&nbsp;
-		</td>
-		<td>
-			<?php
-				$entities = array();
-				foreach($member['MailingAddress'] as $entity){
-					$entities[] = nl2br($entity['mailing_address']);
-				}
-				echo implode("<br><br>", $entities);
-			?>&nbsp;
-		</td>
-		<td>
-			<?php
-				$entities = array();
-				foreach($member['Occupation'] as $entity){
-					$entities[] = $entity['occupation'];
-				}
-				echo implode("<br>", $entities);
-			?>&nbsp;
-		</td>
-		<td>
-			<?php
-				$entities = array();
-				foreach($member['OfficerPosition'] as $entity){
-					$entities[] = $entity['officer_position'];
 				}
 				echo implode("<br>", $entities);
 			?>&nbsp;

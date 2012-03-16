@@ -44,7 +44,9 @@
 		for($i=0; $i<count($this->Form->data['Email']); $i++){ echo $this->Form->input("Email.$i.email", array('label' => "Email #".($i+1))); }
 		for($i=0; $i<count($this->Form->data['PhoneNumber']); $i++){ echo $this->Form->input("PhoneNumber.$i.phone_number", array('label' => "Phone Number #".($i+1))); }
 		for($i=0; $i<count($this->Form->data['MailingAddress']); $i++){
-			echo $this->Form->input("MailingAddress.$i.mailing_address", array('label' => "Mailing Address #".($i+1), 'type' => 'text'));
+			echo $this->Form->input("MailingAddress.$i.street", array('label' => "Street #".($i+1), 'type' => 'text'));
+			echo $this->Form->input("MailingAddress.$i.city", array('label' => "City #".($i+1), 'type' => 'text'));
+			echo $this->Form->input("MailingAddress.$i.zip_code", array('label' => "Zip Code #".($i+1), 'type' => 'text'));
 			echo $this->Form->input("MailingAddress.$i.greater_city", array('label' => "Greater City #".($i+1), 'type' => 'text'));
 			echo $this->Form->input("MailingAddress.$i.state", array('label' => "State #".($i+1), 'type' => 'text'));
 		}

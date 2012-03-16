@@ -1,38 +1,3 @@
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li>
-			<?php echo $this->Html->link(__('Edit Member'), array('action' => 'edit', $member['Member']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete Member'), array('action' => 'delete', $member['Member']['id']), null, __('Are you sure you want to delete # %s?', $member['Member']['id'])); ?>
-			<?php echo $this->Html->link(__('List Members'), array('action' => 'index')); ?>
-			<?php echo $this->Html->link(__('New Member'), array('action' => 'add')); ?>
-		</li>
-		<li>
-			<?php echo $this->Html->link(__('List Emails'), array('controller' => 'emails', 'action' => 'index')); ?>
-			<?php echo $this->Html->link(__('New Email'), array('controller' => 'emails', 'action' => 'add')); ?>
-		</li>
-		<li>
-			<?php echo $this->Html->link(__('List Graduation Years'), array('controller' => 'graduation_years', 'action' => 'index')); ?>
-			<?php echo $this->Html->link(__('New Graduation Year'), array('controller' => 'graduation_years', 'action' => 'add')); ?>
-		</li>
-		<li>
-			<?php echo $this->Html->link(__('List Mailing Addresses'), array('controller' => 'mailing_addresses', 'action' => 'index')); ?>
-			<?php echo $this->Html->link(__('New Mailing Address'), array('controller' => 'mailing_addresses', 'action' => 'add')); ?>
-		</li>
-		<li>
-			<?php echo $this->Html->link(__('List Occupations'), array('controller' => 'occupations', 'action' => 'index')); ?>
-			<?php echo $this->Html->link(__('New Occupation'), array('controller' => 'occupations', 'action' => 'add')); ?>
-		</li>
-		<li>
-			<?php echo $this->Html->link(__('List Officer Positions'), array('controller' => 'officer_positions', 'action' => 'index')); ?>
-			<?php echo $this->Html->link(__('New Officer Position'), array('controller' => 'officer_positions', 'action' => 'add')); ?>
-		</li>
-		<li>
-			<?php echo $this->Html->link(__('List Phone Numbers'), array('controller' => 'phone_numbers', 'action' => 'index')); ?>
-			<?php echo $this->Html->link(__('New Phone Number'), array('controller' => 'phone_numbers', 'action' => 'add')); ?>
-		</li>
-	</ul>
-</div>
 <div class="members view">
 <h2><?php  echo __('Member');?></h2>
 	<dl>
@@ -51,72 +16,35 @@
 			<?php echo h($member['Member']['last_name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Emails'); ?></dt>
-		<dd>
-			<?php
-				$entities = array();
-				foreach($member['Email'] as $entity){
-					$entities[] = $entity['email'];
-				}
-				echo implode("<br>", $entities);
-			?>&nbsp;
-		</dd>
-		<dt><?php echo __('Grad Years'); ?></dt>
-		<dd>
-			<?php
-				$entities = array();
-				foreach($member['GraduationYear'] as $entity){
-					$entities[] = $entity['degree_year'];
-				}
-				echo implode("<br>", $entities);
-			?>&nbsp;
-		</dd>
-		<dt><?php echo __('Addresses'); ?></dt>
-		<dd>
-			<?php
-				$entities = array();
-				foreach($member['MailingAddress'] as $entity){
-					$entities[] = nl2br(trim($entity['mailing_address']));
-				}
-				echo implode("<br>", $entities);
-			?>&nbsp;
-		</dd>
-		<dt><?php echo __('Occupations'); ?></dt>
-		<dd>
-			<?php
-				$entities = array();
-				foreach($member['Occupation'] as $entity){
-					$entities[] = $entity['occupation'];
-				}
-				echo implode("<br>", $entities);
-			?>&nbsp;
-		</dd>
-		<dt><?php echo __('Officer Positions'); ?></dt>
-		<dd>
-			<?php
-				$entities = array();
-				foreach($member['OfficerPosition'] as $entity){
-					$entities[] = $entity['officer_position'];
-				}
-				echo implode("<br>", $entities);
-			?>&nbsp;
-		</dd>
-		<dt><?php echo __('Phone Numbers'); ?></dt>
-		<dd>
-			<?php
-				$entities = array();
-				foreach($member['PhoneNumber'] as $entity){
-					$entities[] = $entity['phone_number'];
-				}
-				echo implode("<br>", $entities);
-			?>&nbsp;
-		</dd>
 		<dt><?php echo __('Things To Note'); ?></dt>
 		<dd>
 			<?php echo h($member['Member']['things_to_note']); ?>
 			&nbsp;
 		</dd>
 	</dl>
+</div>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('Edit Member'), array('action' => 'edit', $member['Member']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Member'), array('action' => 'delete', $member['Member']['id']), null, __('Are you sure you want to delete # %s?', $member['Member']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Members'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Member'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Emails'), array('controller' => 'emails', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Email'), array('controller' => 'emails', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Gifts'), array('controller' => 'gifts', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Gift'), array('controller' => 'gifts', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Graduation Years'), array('controller' => 'graduation_years', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Graduation Year'), array('controller' => 'graduation_years', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Mailing Addresses'), array('controller' => 'mailing_addresses', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Mailing Address'), array('controller' => 'mailing_addresses', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Occupations'), array('controller' => 'occupations', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Occupation'), array('controller' => 'occupations', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Officer Positions'), array('controller' => 'officer_positions', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Officer Position'), array('controller' => 'officer_positions', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Phone Numbers'), array('controller' => 'phone_numbers', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Phone Number'), array('controller' => 'phone_numbers', 'action' => 'add')); ?> </li>
+	</ul>
 </div>
 <div class="related">
 	<h3><?php echo __('Related Emails');?></h3>
@@ -232,8 +160,12 @@
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Member Id'); ?></th>
-		<th><?php echo __('Mailing Address'); ?></th>
+		<th><?php echo __('Street'); ?></th>
+		<th><?php echo __('City'); ?></th>
 		<th><?php echo __('Greater City'); ?></th>
+		<th><?php echo __('State'); ?></th>
+		<th><?php echo __('Zip Code'); ?></th>
+		<th><?php echo __('Country'); ?></th>
 		<th class="actions"><?php echo __('Actions');?></th>
 	</tr>
 	<?php
@@ -242,8 +174,12 @@
 		<tr>
 			<td><?php echo $mailingAddress['id'];?></td>
 			<td><?php echo $mailingAddress['member_id'];?></td>
-			<td><?php echo $mailingAddress['mailing_address'];?></td>
+			<td><?php echo $mailingAddress['street'];?></td>
+			<td><?php echo $mailingAddress['city'];?></td>
 			<td><?php echo $mailingAddress['greater_city'];?></td>
+			<td><?php echo $mailingAddress['state'];?></td>
+			<td><?php echo $mailingAddress['zip_code'];?></td>
+			<td><?php echo $mailingAddress['country'];?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'mailing_addresses', 'action' => 'view', $mailingAddress['id'])); ?>
 				<?php echo $this->Html->link(__('Edit'), array('controller' => 'mailing_addresses', 'action' => 'edit', $mailingAddress['id'])); ?>

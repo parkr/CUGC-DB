@@ -1,0 +1,111 @@
+/**
+ * Media queries to make this site mobile. 
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+	#container {
+		width: 100%;
+		#UserLoginForm {
+			width: 95%;
+		}
+	}
+}
+@media only screen
+and (max-width : 480px) {
+	#container {
+		width: 100%;
+		#content {
+			width: 90%;
+			padding: 2.5% 5% 8% 5%;
+			.message {
+				width: 90%;
+				margin: 2% 1%;
+			}
+			#UserLoginForm {
+				width: 100%;
+			}
+			#section_listing {
+				width: 100%;
+				padding: 1% 1%;
+			}
+			.members.index {
+				.emails, .phone_numbers, .things_to_note {
+					display: none;
+				}
+			}
+			#navigation {
+				//display: none;
+				ul li:nth-child(n+2) {
+					display: none;
+				}
+				ul li {
+					width: 100%;
+					a {
+						display: inline-block;
+						width: 44%;
+					}
+				}
+			}
+		}
+		#footer {
+			text-align: center;
+		}
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+	
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

@@ -881,3 +881,84 @@ body {
   /* line 40, ../../Sass/cugcdb.scss */
   form .note {
     margin-top: -20px; }
+
+/**
+ * Media queries to make this site mobile. 
+ */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  /* Styles */ }
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  /* Styles */ }
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  /* line 21, ../../Sass/_media_queries.scss */
+  #container {
+    width: 100%; }
+    /* line 23, ../../Sass/_media_queries.scss */
+    #container #UserLoginForm {
+      width: 95%; } }
+@media only screen
+and (max-width : 480px) {
+  /* line 30, ../../Sass/_media_queries.scss */
+  #container {
+    width: 100%; }
+    /* line 32, ../../Sass/_media_queries.scss */
+    #container #content {
+      width: 90%;
+      padding: 2.5% 5% 8% 5%; }
+      /* line 35, ../../Sass/_media_queries.scss */
+      #container #content .message {
+        width: 90%;
+        margin: 2% 1%; }
+      /* line 39, ../../Sass/_media_queries.scss */
+      #container #content #UserLoginForm {
+        width: 100%; }
+      /* line 42, ../../Sass/_media_queries.scss */
+      #container #content #section_listing {
+        width: 100%;
+        padding: 1% 1%; }
+      /* line 47, ../../Sass/_media_queries.scss */
+      #container #content .members.index .emails, #container #content .members.index .phone_numbers, #container #content .members.index .things_to_note {
+        display: none; }
+      /* line 53, ../../Sass/_media_queries.scss */
+      #container #content #navigation ul li:nth-child(n+2) {
+        display: none; }
+      /* line 56, ../../Sass/_media_queries.scss */
+      #container #content #navigation ul li {
+        width: 100%; }
+        /* line 58, ../../Sass/_media_queries.scss */
+        #container #content #navigation ul li a {
+          display: inline-block;
+          width: 44%; }
+    /* line 65, ../../Sass/_media_queries.scss */
+    #container #footer {
+      text-align: center; } }
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  /* Styles */ }
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  /* Styles */ }
+/* iPads (portrait) ----------- */
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  /* Styles */ }
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  /* Styles */ }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+  /* Styles */ }

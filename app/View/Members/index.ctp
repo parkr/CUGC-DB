@@ -1,4 +1,4 @@
-<div class="actions">
+<div class="actions" id="navigation">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Member'), array('action' => 'add')); ?></li>
@@ -32,19 +32,19 @@
 	<h2><?php echo __('Members');?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('first_name');?></th>
-			<th><?php echo $this->Paginator->sort('last_name');?></th>
-			<th><?php echo __("Emails"); ?></th>
-			<th><?php echo __("Phone Number"); ?></th>
-			<th><?php echo __('Things to Note');?></th>
+			<th class="first_name"><?php echo $this->Paginator->sort('first_name');?></th>
+			<th class="last_name"><?php echo $this->Paginator->sort('last_name');?></th>
+			<th class="emails"><?php echo __("Emails"); ?></th>
+			<th class="phone_numbers"><?php echo __("Phone Numbers"); ?></th>
+			<th class="things_to_note"><?php echo __('Things to Note');?></th>
 			<th class="actions"><?php echo __('Actions');?></th>
 	</tr>
 	<?php
 	foreach ($members as $member): ?>
 	<tr>
-		<td><?php echo h($member['Member']['first_name']); ?>&nbsp;</td>
-		<td><?php echo h($member['Member']['last_name']); ?>&nbsp;</td>
-		<td>
+		<td class="first_name"><?php echo h($member['Member']['first_name']); ?>&nbsp;</td>
+		<td class="last_name"><?php echo h($member['Member']['last_name']); ?>&nbsp;</td>
+		<td class="emails">
 			<?php
 				$entities = array();
 				foreach($member['Email'] as $entity){
@@ -53,7 +53,7 @@
 				echo implode("<br>", $entities);
 			?>&nbsp;
 		</td>
-		<td>
+		<td class="phone_numbers">
 			<?php
 				$entities = array();
 				foreach($member['PhoneNumber'] as $entity){
@@ -62,7 +62,7 @@
 				echo implode("<br>", $entities);
 			?>&nbsp;
 		</td>
-		<td><?php echo h($member['Member']['things_to_note']); ?>&nbsp;</td>
+		<td class="things_to_note"><?php echo h($member['Member']['things_to_note']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $member['Member']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $member['Member']['id'])); ?>

@@ -1,4 +1,4 @@
-<div class="actions">
+<div class="actions" id="navigation">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('List Graduation Years'), array('action' => 'index'));?></li>

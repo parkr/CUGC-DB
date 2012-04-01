@@ -9,6 +9,8 @@ $websiteTitle = __('CUGC Alumni & Gift Database');
 		<?php echo $title_for_layout; ?>:
 		<?php echo $websiteTitle; ?>
 	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	<?php
 		echo $this->Html->meta('icon', $this->Html->url('/favicon.png'), array('type' => 'image/png'));
 

@@ -882,6 +882,20 @@ body {
   form .note {
     margin-top: -20px; }
 
+/* line 44, ../../Sass/cugcdb.scss */
+.add_field {
+  display: block; }
+  /* line 46, ../../Sass/cugcdb.scss */
+  form .add_field {
+    margin-top: -10px;
+    clear: both;
+    margin-bottom: .2em;
+    padding: .5em; }
+
+/* line 54, ../../Sass/cugcdb.scss */
+.sub_field_bunch {
+  margin-left: -0.5em; }
+
 /**
  * Media queries to make this site mobile. 
  */
@@ -935,8 +949,9 @@ and (max-width : 480px) {
         /* line 58, ../../Sass/_media_queries.scss */
         #container #content #navigation ul li a {
           display: inline-block;
-          width: 44%; }
-    /* line 65, ../../Sass/_media_queries.scss */
+          width: 44%;
+          font-size: 22px; }
+    /* line 66, ../../Sass/_media_queries.scss */
     #container #footer {
       text-align: center; } }
 /* iPads (portrait and landscape) ----------- */

@@ -41,7 +41,7 @@ class MembersController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
-			$this->request->data = $this->_parseMemberAssociatedFields($this->request->data);
+			//$this->request->data = $this->_parseMemberAssociatedFields($this->request->data);
 			$this->Member->create();
 			if ($this->Member->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('The member has been saved'));

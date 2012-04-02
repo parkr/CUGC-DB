@@ -35,41 +35,54 @@
 	<fieldset>
 		<legend><?php echo __('Add Member'); ?></legend>
 	<?php
-		echo $this->Form->input('first_name');
-		echo $this->Form->input('last_name');
+		echo $this->Form->input('first_name')."\n";
+		echo $this->Form->input('last_name')."\n"."\n";
 		
-		echo $this->Form->input('Email.email');
-		echo $this->Html->tag('div', 'Comma-separated emails', array('class' => 'note'));
+		echo $this->Html->tag('div', null, array('id' => 'emails', 'class' => 'sub_field_bunch'))."\n";
+		echo $this->Form->input('Email.0.email')."\n";
+		echo $this->Html->tag('a', 'Add Email', array('class' => 'add_field', 'id' => 'add_email', 'href' => '#'))."\n";
+		echo "</div>"."\n"."\n";
 		
-		echo $this->Form->input('PhoneNumber.phone_number');
-		echo $this->Html->tag('div', 'Comma-separated phone numbers', array('class' => 'note'));
+		echo $this->Html->tag('div', null, array('id' => 'phone_numbers', 'class' => 'sub_field_bunch'))."\n";
+		echo $this->Form->input('PhoneNumber.0.phone_number')."\n";
+		echo $this->Html->tag('a', 'Add Phone Number', array('class' => 'add_field', 'id' => 'add_phone_number', 'href' => '#'))."\n";
+		echo "</div>"."\n"."\n";
 		
-		echo $this->Html->tag('h4', 'Graduation Years');
-		echo $this->Form->input('GraduationYear.degree');
-		echo $this->Form->input('GraduationYear.year', array('type' => 'number', 'name' => 'data[GraduationYear][year]'));
-		echo $this->Html->tag('div', 'Year of graduation', array('class' => 'note'));
-		echo $this->Html->tag('div', 'Comma-separated degrees and years that correspond to each other (vertically)', array('class' => 'note'));
+		echo $this->Html->tag('div', null, array('id' => 'graduation_years', 'class' => 'sub_field_bunch'))."\n";
+		echo $this->Html->tag('h4', 'Graduation Years')."\n";
+		echo $this->Form->input('GraduationYear.0.degree')."\n";
+		echo $this->Form->input('GraduationYear.0.year', array('type' => 'number', 'name' => 'data[GraduationYear][year]'))."\n";
+		echo $this->Html->tag('div', 'Year of graduation', array('class' => 'note'))."\n";
+		echo $this->Html->tag('a', 'Add Graduation', array('class' => 'add_field', 'id' => 'add_graduation_year', 'href' => '#'))."\n";
+		echo "</div>"."\n"."\n";
 		
-		echo $this->Html->tag('h4', 'Mailing Addresses');
-		echo $this->Form->input('MailingAddress.street');
-		echo $this->Form->input('MailingAddress.city');
-		echo $this->Form->input('MailingAddress.zip_code', array('type' => 'text'));
-		echo $this->Form->input('MailingAddress.greater_city');
-		echo $this->Form->input('MailingAddress.state');
-		echo $this->Html->tag('div', 'SEMI-COLON-SEPARATED values that correspond to each other (vertically)', array('class' => 'note'));
+		echo $this->Html->tag('div', null, array('id' => 'mailing_addresses', 'class' => 'sub_field_bunch'))."\n";
+		echo $this->Html->tag('h4', 'Mailing Addresses')."\n";
+		echo $this->Form->input('MailingAddress.0.street', array('type' => 'text'))."\n";
+		echo $this->Form->input('MailingAddress.0.city')."\n";
+		echo $this->Form->input('MailingAddress.0.state')."\n";
+		echo $this->Form->input('MailingAddress.0.zip_code', array('type' => 'text'))."\n";
+		echo $this->Form->input('MailingAddress.0.greater_city')."\n";
+		echo $this->Html->tag('a', 'Add Mailing Address', array('class' => 'add_field', 'id' => 'add_mailing_address', 'href' => '#'))."\n";
+		echo "</div>"."\n"."\n";
 		
-		echo $this->Html->tag('h4', 'Occupations');
-		echo $this->Form->input('Occupation.position');
-		echo $this->Form->input('Occupation.company');
-		echo $this->Html->tag('div', 'Comma-separated values that correspond to each other (vertically)', array('class' => 'note'));
+		echo $this->Html->tag('div', null, array('id' => 'occupations', 'class' => 'sub_field_bunch'))."\n";
+		echo $this->Html->tag('h4', 'Occupations')."\n";
+		echo $this->Form->input('Occupation.0.position')."\n";
+		echo $this->Form->input('Occupation.0.company')."\n";
+		echo $this->Html->tag('a', 'Add Occupation', array('class' => 'add_field', 'id' => 'add_occupation', 'href' => '#'))."\n";
+		echo "</div>"."\n"."\n";
 		
-		echo $this->Html->tag('h4', 'Officer Positions');
-		echo $this->Form->input('OfficerPosition.position');
-		echo $this->Form->input('OfficerPosition.years');
-		echo $this->Html->tag('div', 'Comma-separated values that correspond to each other (vertically)', array('class' => 'note'));
+		echo $this->Html->tag('div', null, array('id' => 'officer_positions', 'class' => 'sub_field_bunch'))."\n";
+		echo $this->Html->tag('h4', 'Officer Positions')."\n";
+		echo $this->Form->input('OfficerPosition.0.position')."\n";
+		echo $this->Form->input('OfficerPosition.0.years')."\n";
+		echo $this->Html->tag('a', 'Add Officer Position', array('class' => 'add_field', 'id' => 'add_officer_position', 'href' => '#'))."\n";
+		echo "</div>"."\n"."\n";
 		
 		echo $this->Form->input('things_to_note');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit'));?>
 </div>
+<?php echo $this->Html->script('mass_add_helpers.js'); ?>

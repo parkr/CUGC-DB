@@ -41,5 +41,18 @@ body {
 		margin-top: -20px;
 	}
 }
+.add_field {
+	display: block;
+	form & {
+		margin-top: -10px;
+		clear: both;
+		margin-bottom: .2em;
+		padding: .5em;
+	}
+}
+
+.sub_field_bunch {
+	margin-left: -.5em;
+}
 
 @import "media_queries";

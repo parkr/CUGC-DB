@@ -83,8 +83,6 @@
 	<?php if (!empty($member['Email'])):?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Member Id'); ?></th>
 		<th><?php echo __('Email'); ?></th>
 		<th class="actions"><?php echo __('Actions');?></th>
 	</tr>
@@ -92,8 +90,6 @@
 		$i = 0;
 		foreach ($member['Email'] as $email): ?>
 		<tr>
-			<td><?php echo $email['id'];?></td>
-			<td><?php echo $email['member_id'];?></td>
 			<td><?php echo $email['email'];?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'emails', 'action' => 'view', $email['id'])); ?>
@@ -156,7 +152,6 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Member Id'); ?></th>
 		<th><?php echo __('Degree'); ?></th>
 		<th><?php echo __('Year'); ?></th>
 		<th class="actions"><?php echo __('Actions');?></th>
@@ -166,7 +161,6 @@
 		foreach ($member['GraduationYear'] as $graduationYear): ?>
 		<tr>
 			<td><?php echo $graduationYear['id'];?></td>
-			<td><?php echo $graduationYear['member_id'];?></td>
 			<td><?php echo $graduationYear['degree'];?></td>
 			<td><?php echo $graduationYear['year'];?></td>
 			<td class="actions">
@@ -190,8 +184,6 @@
 	<?php if (!empty($member['MailingAddress'])):?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Member Id'); ?></th>
 		<th><?php echo __('Street'); ?></th>
 		<th><?php echo __('City'); ?></th>
 		<th><?php echo __('Greater City'); ?></th>
@@ -204,8 +196,6 @@
 		$i = 0;
 		foreach ($member['MailingAddress'] as $mailingAddress): ?>
 		<tr>
-			<td><?php echo $mailingAddress['id'];?></td>
-			<td><?php echo $mailingAddress['member_id'];?></td>
 			<td><?php echo $mailingAddress['street'];?></td>
 			<td><?php echo $mailingAddress['city'];?></td>
 			<td><?php echo $mailingAddress['greater_city'];?></td>
@@ -233,8 +223,6 @@
 	<?php if (!empty($member['Occupation'])):?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Member Id'); ?></th>
 		<th><?php echo __('Industry Id'); ?></th>
 		<th><?php echo __('Position'); ?></th>
 		<th><?php echo __('Company'); ?></th>
@@ -246,8 +234,6 @@
 		$i = 0;
 		foreach ($member['Occupation'] as $occupation): ?>
 		<tr>
-			<td><?php echo $occupation['id'];?></td>
-			<td><?php echo $occupation['member_id'];?></td>
 			<td><?php echo $occupation['industry_id'];?></td>
 			<td><?php echo $occupation['position'];?></td>
 			<td><?php echo $occupation['company'];?></td>
@@ -274,8 +260,6 @@
 	<?php if (!empty($member['OfficerPosition'])):?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Member Id'); ?></th>
 		<th><?php echo __('Position'); ?></th>
 		<th><?php echo __('Years'); ?></th>
 		<th class="actions"><?php echo __('Actions');?></th>
@@ -284,8 +268,6 @@
 		$i = 0;
 		foreach ($member['OfficerPosition'] as $officerPosition): ?>
 		<tr>
-			<td><?php echo $officerPosition['id'];?></td>
-			<td><?php echo $officerPosition['member_id'];?></td>
 			<td><?php echo $officerPosition['position'];?></td>
 			<td><?php echo $officerPosition['years'];?></td>
 			<td class="actions">
@@ -309,8 +291,6 @@
 	<?php if (!empty($member['PhoneNumber'])):?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Member Id'); ?></th>
 		<th><?php echo __('Phone Number'); ?></th>
 		<th class="actions"><?php echo __('Actions');?></th>
 	</tr>
@@ -318,8 +298,6 @@
 		$i = 0;
 		foreach ($member['PhoneNumber'] as $phoneNumber): ?>
 		<tr>
-			<td><?php echo $phoneNumber['id'];?></td>
-			<td><?php echo $phoneNumber['member_id'];?></td>
 			<td><?php echo $phoneNumber['phone_number'];?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'phone_numbers', 'action' => 'view', $phoneNumber['id'])); ?>

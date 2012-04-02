@@ -27,7 +27,7 @@ class MembersController extends AppController {
 	public function view($id = null) {
 		$this->Member->id = $id;
 		if (!$this->Member->exists()) {
-			throw new NotFoundException(__('Invalid member'));
+			throw new NotFoundException(__('Invalid member.'));
 		}
 		$this->Member->recursive = 2;
 		$this->set('accounts', $this->Member->Gift->Account->find('all'));
@@ -44,7 +44,7 @@ class MembersController extends AppController {
 			//$this->request->data = $this->_parseMemberAssociatedFields($this->request->data);
 			$this->Member->create();
 			if ($this->Member->saveAll($this->request->data)) {
-				$this->Session->setFlash(__('The member has been saved'));
+				$this->Session->setFlash(__('Member has been saved.'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The member could not be saved. Please, try again.'));
@@ -61,7 +61,7 @@ class MembersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Member->create();
 			if ($this->Member->save($this->request->data)) {
-				$this->Session->setFlash(__('The member has been saved'));
+				$this->Session->setFlash(__('Member has been saved.'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The member could not be saved. Please, try again.'));
@@ -78,7 +78,7 @@ class MembersController extends AppController {
 	public function edit($id = null) {
 		$this->Member->id = $id;
 		if (!$this->Member->exists()) {
-			throw new NotFoundException(__('Invalid member'));
+			throw new NotFoundException(__('Invalid member.'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			$this->Member->Email->deleteAll				(array('Email.member_id' => $id), false);
@@ -88,7 +88,7 @@ class MembersController extends AppController {
 			$this->Member->OfficerPosition->deleteAll	(array('OfficerPosition.member_id' => $id), false);
 			$this->Member->GraduationYear->deleteAll	(array('GraduationYear.member_id' => $id), false);
 			if ($this->Member->saveAll($this->request->data)) {
-				$this->Session->setFlash(__('The member has been saved'));
+				$this->Session->setFlash(__('The member has been saved.'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The member could not be saved. Please, try again.'));
@@ -111,13 +111,13 @@ class MembersController extends AppController {
 		}
 		$this->Member->id = $id;
 		if (!$this->Member->exists()) {
-			throw new NotFoundException(__('Invalid member'));
+			throw new NotFoundException(__('Invalid member.'));
 		}
 		if ($this->Member->delete()) {
-			$this->Session->setFlash(__('Member deleted'));
+			$this->Session->setFlash(__('Member deleted.'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Member was not deleted'));
+		$this->Session->setFlash(__('Member was not deleted.'));
 		$this->redirect(array('action' => 'index'));
 	}
 	

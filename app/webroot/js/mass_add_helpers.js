@@ -249,6 +249,5 @@ document.onreadystatechange = function(){
 			return false;
 		}
 		
-		
 	}
 };

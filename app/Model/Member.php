@@ -10,6 +10,7 @@ App::uses('AppModel', 'Model');
  * @property Occupation $Occupation
  * @property OfficerPosition $OfficerPosition
  * @property PhoneNumber $PhoneNumber
+ * @property IntlTour $IntlTour
  */
 class Member extends AppModel {
 	
@@ -23,7 +24,7 @@ class Member extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'name';
+	public $displayField = 'last_name';
 /**
  * Validation rules
  *
@@ -50,7 +51,16 @@ class Member extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		
+		'things_to_note' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
@@ -151,6 +161,30 @@ class Member extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		)
+	);
+
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'IntlTour' => array(
+			'className' => 'IntlTour',
+			'joinTable' => 'intl_tours_members',
+			'foreignKey' => 'member_id',
+			'associationForeignKey' => 'intl_tour_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+			'deleteQuery' => '',
+			'insertQuery' => ''
 		)
 	);
 

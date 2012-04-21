@@ -41,7 +41,6 @@ class MembersController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
-			//$this->request->data = $this->_parseMemberAssociatedFields($this->request->data);
 			$this->Member->create();
 			if ($this->Member->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('Member has been saved.'));
@@ -87,6 +86,7 @@ class MembersController extends AppController {
 			$this->Member->Occupation->deleteAll		(array('Occupation.member_id' => $id), false);
 			$this->Member->OfficerPosition->deleteAll	(array('OfficerPosition.member_id' => $id), false);
 			$this->Member->GraduationYear->deleteAll	(array('GraduationYear.member_id' => $id), false);
+			$this->Member->IntlTour->deleteAll			(array('IntlTourMember.member_id' => $id), false);
 			if ($this->Member->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('The member has been saved.'));
 				$this->redirect(array('action' => 'index'));
@@ -117,7 +117,7 @@ class MembersController extends AppController {
 			$this->Session->setFlash(__('Member deleted.'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Member was not deleted.'));
+		$this->Session->setFlash(__('Member was not deleted.s'));
 		$this->redirect(array('action' => 'index'));
 	}
 	

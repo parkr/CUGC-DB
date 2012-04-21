@@ -11,7 +11,7 @@ class MemberTestCase extends CakeTestCase {
  *
  * @var array
  */
-	public $fixtures = array('app.member', 'app.email', 'app.gift', 'app.account', 'app.graduation_year', 'app.mailing_address', 'app.occupation', 'app.officer_position', 'app.phone_number');
+	public $fixtures = array('app.member', 'app.email', 'app.gift', 'app.account', 'app.graduation_year', 'app.mailing_address', 'app.occupation', 'app.industry', 'app.officer_position', 'app.phone_number', 'app.intl_tour', 'app.intl_tours_member');
 
 /**
  * setUp method

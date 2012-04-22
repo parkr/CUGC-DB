@@ -24,7 +24,7 @@ class Member extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'last_name';
+	public $displayField = 'name';
 /**
  * Validation rules
  *
@@ -34,7 +34,7 @@ class Member extends AppModel {
 		'first_name' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'You must provide a first name.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -44,17 +44,7 @@ class Member extends AppModel {
 		'last_name' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'things_to_note' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'You must provide a last name.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

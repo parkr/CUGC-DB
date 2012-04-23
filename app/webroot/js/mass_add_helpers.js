@@ -324,7 +324,7 @@ document.onreadystatechange = function(){
 			// 'Remove Fields' Link
 			var removeButton = document.createElement("a");
 			removeButton.className = "add_field";
-			removeButton.innerHTML = "Remove Fields Above";
+			removeButton.innerHTML = "Remove Field(s) Above";
 			removeButton.href = "#";
 			removeButton.onclick = CUGCDB.removeAllFieldsInSection;
 				

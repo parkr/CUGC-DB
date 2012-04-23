@@ -7,6 +7,16 @@ CUGCDB.indices = {
 	"occupations": 0,
 	"officer_positions": 0
 };
+CUGCDB.removeInput = function(){
+	// Removes just one input field
+	console.log("removed", this.parentNode.parentNode.removeChild(this.parentNode));
+	return false;
+}
+CUGCDB.removeAllFieldsInSection = function(){
+	// Removes the entire .sub_field_bunch
+	console.log("removed", this.parentNode.parentNode.removeChild(this.parentNode));
+	return false;
+}
 
 document.onreadystatechange = function(){
 	if(document.readyState == "complete"){
@@ -247,6 +257,80 @@ document.onreadystatechange = function(){
 			}
 			
 			return false;
+		}
+		
+		/*CUGCDB.removeAliases = [
+			{
+				"removeAlias": "remove_emails",
+				"removeDiv": "emails"
+			},
+			{
+				"removeAlias": "remove_phone_numbers",
+				"removeDiv": "phone_numbers"
+			},
+			{
+				"removeAlias": "remove_graduation_years",
+				"removeDiv": "graduation_years"
+			},
+			{
+				"removeAlias": "remove_mailing_addresses",
+				"removeDiv": "mailing_addresses"
+			},
+			{
+				"removeAlias": "remove_occupations",
+				"removeDiv": "occupations"
+			},
+			{
+				"removeAlias": "remove_officer_positions",
+				"removeDiv": "officer_positions"
+			}
+		];
+		
+		for(var a=0; a<CUGCDB.removeAliases.length; a++){
+			
+			document.getElementById(CUGCDB.removeAliases[a].removeAlias).onclick = function(){
+				var div = document.getElementById(CUGCDB.removeAliases[a].removeDiv);
+				div.parentNode.removeChild(div);
+				return false;
+			};
+			
+		}*/
+		
+		/*var inputs = document.getElementsByTagName("input");
+		for(var r=0; r<inputs.length; r++){
+			
+			var _this = inputs[r];
+			if(_this.id.indexOf("Member") < 0 && _this.type.search(/(submit|hidden)/) < 0){
+				console.log("Adding handler to :", _this);
+				
+				// Red 'x'
+				var removeButton = document.createElement("a");
+				removeButton.className = "removeButton";
+				removeButton.innerHTML = "x";
+				removeButton.title = "remove this field";
+				removeButton.onclick = CUGCDB.removeInput;
+				removeButton.dataset.id_to_remove = _this.id;
+				
+				_this.parentNode.appendChild(removeButton);
+				
+			}
+		}*/
+		
+		var sub_field_bunches = document.getElementsByClassName("sub_field_bunch");
+		for(var s=0; s<sub_field_bunches.length; s++){
+			
+			var _this = sub_field_bunches[s];
+			
+			// 'Remove Fields' Link
+			var removeButton = document.createElement("a");
+			removeButton.className = "add_field";
+			removeButton.innerHTML = "Remove Fields Above";
+			removeButton.href = "#";
+			removeButton.onclick = CUGCDB.removeAllFieldsInSection;
+				
+			_this.appendChild(removeButton);
+			
+			
 		}
 		
 	}

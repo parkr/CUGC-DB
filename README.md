@@ -1,6 +1,10 @@
 # CUGC-DB
 
-## The greatest membership database ever. Made specifically for the Cornell University Glee Club.
+### The greatest membership database ever. Made specifically for the Cornell University Glee Club.
+
+#### Location
+
+It can currently be found at [db.gleeclub.com](http://db.gleeclub.com).
 
 #### Purpose
 
@@ -11,8 +15,8 @@ Additionally, it is often important to have some background information on a par
 #### Technologies
 
 - CakePHP
-- (mt) servers
 - MySQL
+- (mt) servers
 
 ### Credits
 

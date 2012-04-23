@@ -39,30 +39,7 @@
 		echo $this->Form->input('id');
 		echo $this->Form->input('first_name');
 		echo $this->Form->input('last_name');
-		
-		// List associated values, +1
-		for($i=0; $i<count($this->Form->data['Email']); $i++){ echo $this->Form->input("Email.$i.email", array('label' => "Email #".($i+1))); }
-		for($i=0; $i<count($this->Form->data['PhoneNumber']); $i++){ echo $this->Form->input("PhoneNumber.$i.phone_number", array('label' => "Phone Number #".($i+1))); }
-		for($i=0; $i<count($this->Form->data['MailingAddress']); $i++){
-			echo $this->Form->input("MailingAddress.$i.street", array('label' => "Street #".($i+1), 'type' => 'text'));
-			echo $this->Form->input("MailingAddress.$i.city", array('label' => "City #".($i+1), 'type' => 'text'));
-			echo $this->Form->input("MailingAddress.$i.zip_code", array('label' => "Zip Code #".($i+1), 'type' => 'text'));
-			echo $this->Form->input("MailingAddress.$i.greater_city", array('label' => "Greater City #".($i+1), 'type' => 'text'));
-			echo $this->Form->input("MailingAddress.$i.state", array('label' => "State #".($i+1), 'type' => 'text'));
-		}
-		for($i=0; $i<count($this->Form->data['Occupation']); $i++){
-			echo $this->Form->input("Occupation.$i.position", array('label' => "Occupation: Position #".($i+1)));
-			echo $this->Form->input("Occupation.$i.company", array('label' => "Occupation: Company #".($i+1)));
-		}
-		for($i=0; $i<count($this->Form->data['OfficerPosition']); $i++){
-			echo $this->Form->input("OfficerPosition.$i.position", array('label' => "Officer Position #".($i+1)));
-			echo $this->Form->input("OfficerPosition.$i.years", array('label' => "Officer Years #".($i+1)));
-		}
-		for($i=0; $i<count($this->Form->data['GraduationYear']); $i++){
-			echo $this->Form->input("GraduationYear.$i.degree", array('label' => "Degree #".($i+1)));
-			echo $this->Form->input("GraduationYear.$i.year", array('label' => "Graduation Year #".($i+1), 'type' => 'number'));
-		}
-		
+		echo $this->Form->input('is_living', array('checked' => "checked"));
 		echo $this->Form->input('things_to_note');
 	?>
 	</fieldset>

@@ -80,14 +80,7 @@ class MembersController extends AppController {
 			throw new NotFoundException(__('Invalid member.'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			$this->Member->Email->deleteAll				(array('Email.member_id' => $id), false);
-			$this->Member->PhoneNumber->deleteAll		(array('PhoneNumber.member_id' => $id), false);
-			$this->Member->MailingAddress->deleteAll	(array('MailingAddress.member_id' => $id), false);
-			$this->Member->Occupation->deleteAll		(array('Occupation.member_id' => $id), false);
-			$this->Member->OfficerPosition->deleteAll	(array('OfficerPosition.member_id' => $id), false);
-			$this->Member->GraduationYear->deleteAll	(array('GraduationYear.member_id' => $id), false);
-			$this->Member->IntlTour->deleteAll			(array('IntlTourMember.member_id' => $id), false);
-			if ($this->Member->saveAll($this->request->data)) {
+			if ($this->Member->save($this->request->data)) {
 				$this->Session->setFlash(__('The member has been saved.'));
 				$this->redirect(array('action' => 'index'));
 			} else {

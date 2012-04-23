@@ -76,6 +76,12 @@
 			<?php echo h($member['Member']['things_to_note']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Is Living?'); ?></dt>
+		<dd>
+			<?php echo $this->Html->image(($member['Member']['is_living'] == 1) ? "https://github.com/images/modules/ajax/success.png" : "red_x.png"); ?>
+			&nbsp;
+		</dd>
+		
 	</dl>
 </div>
 <div class="related">

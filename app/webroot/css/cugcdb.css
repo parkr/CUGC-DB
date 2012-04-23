@@ -20,13 +20,13 @@
  * @since         CakePHP(tm)
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-/* line 19, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 19, ../../Sass/_cake.generic.scss */
 * {
   margin: 0;
   padding: 0; }
 
 /** General Style Info **/
-/* line 25, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 25, ../../Sass/_cake.generic.scss */
 body {
   background: #003d4c;
   color: #fff;
@@ -34,75 +34,75 @@ body {
   font-size: 90%;
   margin: 0; }
 
-/* line 32, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 32, ../../Sass/_cake.generic.scss */
 a {
   color: #0a4740;
   text-decoration: underline;
   font-weight: bold; }
 
-/* line 37, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 37, ../../Sass/_cake.generic.scss */
 a:hover {
   color: #0e414d;
   text-decoration: none; }
 
-/* line 41, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 41, ../../Sass/_cake.generic.scss */
 a img {
   border: none; }
 
-/* line 44, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 44, ../../Sass/_cake.generic.scss */
 h1, h2, h3, h4 {
   font-weight: normal;
   margin-bottom: 0.5em; }
 
-/* line 48, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 48, ../../Sass/_cake.generic.scss */
 h1 {
   background: #fff;
   color: #003d4c;
   font-size: 100%; }
 
-/* line 53, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 53, ../../Sass/_cake.generic.scss */
 h2 {
   background: #fff;
   color: #0a4740;
   font-family: 'Gill Sans','lucida grande', helvetica, arial, sans-serif;
   font-size: 190%; }
 
-/* line 59, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 59, ../../Sass/_cake.generic.scss */
 h3 {
   color: #0a4740;
   font-family: 'Gill Sans','lucida grande', helvetica, arial, sans-serif;
   font-size: 165%; }
 
-/* line 64, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 64, ../../Sass/_cake.generic.scss */
 h4 {
   color: #993;
   font-weight: normal; }
 
-/* line 68, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 68, ../../Sass/_cake.generic.scss */
 ul, li {
   margin: 0 12px; }
 
-/* line 71, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 71, ../../Sass/_cake.generic.scss */
 p {
   margin: 0 0 1em 0; }
 
 /** Layout **/
-/* line 76, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 76, ../../Sass/_cake.generic.scss */
 #container {
   text-align: left; }
 
-/* line 80, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 80, ../../Sass/_cake.generic.scss */
 #header {
   padding: 10px 20px; }
 
-/* line 83, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 83, ../../Sass/_cake.generic.scss */
 #header h1 {
   line-height: 20px;
   background: url("../favicon.png") no-repeat left;
   color: #fff;
   padding: 0px 30px; }
 
-/* line 89, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 89, ../../Sass/_cake.generic.scss */
 #header h1 a {
   margin-left: 10px;
   color: #fff;
@@ -111,12 +111,12 @@ p {
   display: inline-block;
   font-size: 18px; }
 
-/* line 97, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 97, ../../Sass/_cake.generic.scss */
 #header h1 a:hover {
   color: #fff;
   text-decoration: underline; }
 
-/* line 101, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 101, ../../Sass/_cake.generic.scss */
 #content {
   background: #fff;
   clear: both;
@@ -124,39 +124,39 @@ p {
   padding: 10px 20px 40px 20px;
   overflow: auto; }
 
-/* line 108, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 108, ../../Sass/_cake.generic.scss */
 #footer {
   clear: both;
   padding: 6px 10px;
   text-align: right; }
-  /* line 112, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+  /* line 112, ../../Sass/_cake.generic.scss */
   #footer a {
     color: #e6e6e6;
     text-decoration: none; }
-    /* line 115, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+    /* line 115, ../../Sass/_cake.generic.scss */
     #footer a:hover {
       color: #fff; }
 
 /** containers **/
-/* line 124, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 124, ../../Sass/_cake.generic.scss */
 div.form,
 div.index,
 div.view {
   width: 97%;
   padding: 10px 2%; }
 
-/* line 129, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 129, ../../Sass/_cake.generic.scss */
 div.actions {
   width: 96%;
   padding: 10px 1.5%; }
 
-/* line 133, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 133, ../../Sass/_cake.generic.scss */
 div.actions h3 {
   padding-top: 0;
   color: #777; }
 
 /** Tables **/
-/* line 140, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 140, ../../Sass/_cake.generic.scss */
 table {
   border-right: 0;
   clear: both;
@@ -164,72 +164,72 @@ table {
   margin-bottom: 10px;
   width: 100%; }
 
-/* line 147, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 147, ../../Sass/_cake.generic.scss */
 th {
   border: 0;
   border-bottom: 2px solid #555;
   text-align: left;
   padding: 4px; }
 
-/* line 153, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 153, ../../Sass/_cake.generic.scss */
 th a {
   display: block;
   padding: 2px 4px;
   text-decoration: none; }
 
-/* line 158, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 158, ../../Sass/_cake.generic.scss */
 th a.asc:after {
   content: ' ⇣'; }
 
-/* line 161, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 161, ../../Sass/_cake.generic.scss */
 th a.desc:after {
   content: ' ⇡'; }
 
-/* line 164, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 164, ../../Sass/_cake.generic.scss */
 table tr td {
   padding: 6px;
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid #ddd; }
 
-/* line 170, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 170, ../../Sass/_cake.generic.scss */
 table tr:nth-child(even) {
   background: #f9f9f9; }
 
-/* line 173, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 173, ../../Sass/_cake.generic.scss */
 td.actions {
   text-align: center;
   white-space: nowrap; }
 
-/* line 177, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 177, ../../Sass/_cake.generic.scss */
 table td.actions a {
   margin: 0px 6px;
   padding: 2px 5px; }
 
 /* SQL log */
-/* line 183, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 183, ../../Sass/_cake.generic.scss */
 .cake-sql-log {
   background: #fff; }
 
-/* line 186, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 186, ../../Sass/_cake.generic.scss */
 .cake-sql-log td {
   padding: 4px 8px;
   text-align: left;
   font-family: Monaco, Consolas, "Courier New", monospaced; }
 
-/* line 191, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 191, ../../Sass/_cake.generic.scss */
 .cake-sql-log caption {
   color: #fff; }
 
 /** Paging **/
-/* line 196, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 196, ../../Sass/_cake.generic.scss */
 .paging {
   background: #fff;
   color: #ccc;
   margin-top: 1em;
   clear: both; }
 
-/* line 204, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 204, ../../Sass/_cake.generic.scss */
 .paging .current,
 .paging .disabled,
 .paging a {
@@ -237,136 +237,136 @@ table td.actions a {
   padding: 5px 8px;
   display: inline-block; }
 
-/* line 209, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 209, ../../Sass/_cake.generic.scss */
 .paging > span {
   display: inline-block;
   border: 1px solid #ccc;
   border-left: 0; }
 
-/* line 214, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 214, ../../Sass/_cake.generic.scss */
 .paging > span:hover {
   background: #efefef; }
 
-/* line 217, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 217, ../../Sass/_cake.generic.scss */
 .paging .prev {
   border-left: 1px solid #ccc;
   -moz-border-radius: 4px 0 0 4px;
   -webkit-border-radius: 4px 0 0 4px;
   border-radius: 4px 0 0 4px; }
 
-/* line 223, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 223, ../../Sass/_cake.generic.scss */
 .paging .next {
   -moz-border-radius: 0 4px 4px 0;
   -webkit-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0; }
 
-/* line 228, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 228, ../../Sass/_cake.generic.scss */
 .paging .disabled {
   color: #ddd; }
 
-/* line 231, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 231, ../../Sass/_cake.generic.scss */
 .paging .disabled:hover {
   background: transparent; }
 
-/* line 234, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 234, ../../Sass/_cake.generic.scss */
 .paging .current {
   background: #efefef;
   color: #c73e14; }
 
 /** Scaffold View **/
-/* line 240, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 240, ../../Sass/_cake.generic.scss */
 dl {
   line-height: 2em;
   margin: 0em 0em;
   width: 100%; }
 
-/* line 246, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 246, ../../Sass/_cake.generic.scss */
 dl dd:nth-child(4n+2),
 dl dt:nth-child(4n+1) {
   background: #f4f4f4; }
 
-/* line 250, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 250, ../../Sass/_cake.generic.scss */
 dt {
   font-weight: bold;
   padding-left: 4px;
   vertical-align: top;
   width: 14em; }
 
-/* line 256, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 256, ../../Sass/_cake.generic.scss */
 dd {
   margin-left: 14em;
   margin-top: -2em;
   vertical-align: top; }
 
 /** Forms **/
-/* line 263, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 263, ../../Sass/_cake.generic.scss */
 form {
   clear: both;
   margin-right: 20px;
   padding: 0;
   width: 95%; }
 
-/* line 269, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 269, ../../Sass/_cake.generic.scss */
 fieldset {
   border: none;
   margin-bottom: 1em;
   padding: 16px 10px; }
 
-/* line 274, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 274, ../../Sass/_cake.generic.scss */
 fieldset legend {
   color: #e32;
   font-size: 160%;
   font-weight: bold; }
 
-/* line 279, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 279, ../../Sass/_cake.generic.scss */
 fieldset fieldset {
   margin-top: 0;
   padding: 10px 0 0; }
 
-/* line 283, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 283, ../../Sass/_cake.generic.scss */
 fieldset fieldset legend {
   font-size: 120%;
   font-weight: normal; }
 
-/* line 287, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 287, ../../Sass/_cake.generic.scss */
 fieldset fieldset div {
   clear: left;
   margin: 0 20px; }
 
-/* line 291, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 291, ../../Sass/_cake.generic.scss */
 form div {
   clear: both;
   margin-bottom: 1em;
   padding: .5em;
   vertical-align: text-top; }
 
-/* line 297, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 297, ../../Sass/_cake.generic.scss */
 form .input {
   color: #444; }
 
-/* line 300, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 300, ../../Sass/_cake.generic.scss */
 form .required {
   font-weight: bold; }
 
-/* line 303, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 303, ../../Sass/_cake.generic.scss */
 form .required label:after {
   color: #e32;
   content: '*';
   display: inline; }
 
-/* line 308, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 308, ../../Sass/_cake.generic.scss */
 form div.submit {
   border: 0;
   clear: both;
   margin-top: 10px; }
 
-/* line 313, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 313, ../../Sass/_cake.generic.scss */
 label {
   display: block;
   font-size: 110%;
   margin-bottom: 3px; }
 
-/* line 318, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 318, ../../Sass/_cake.generic.scss */
 input, textarea {
   clear: both;
   font-size: 140%;
@@ -374,33 +374,33 @@ input, textarea {
   padding: 1%;
   width: 98%; }
 
-/* line 325, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 325, ../../Sass/_cake.generic.scss */
 select {
   clear: both;
   font-size: 120%;
   vertical-align: text-bottom; }
 
-/* line 330, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 330, ../../Sass/_cake.generic.scss */
 select[multiple=multiple] {
   width: 100%; }
 
-/* line 333, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 333, ../../Sass/_cake.generic.scss */
 option {
   font-size: 120%;
   padding: 0 3px; }
 
-/* line 337, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 337, ../../Sass/_cake.generic.scss */
 input[type=checkbox] {
   clear: left;
   float: left;
   margin: 0px 6px 7px 2px;
   width: auto; }
 
-/* line 343, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 343, ../../Sass/_cake.generic.scss */
 div.checkbox label {
   display: inline; }
 
-/* line 346, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 346, ../../Sass/_cake.generic.scss */
 input[type=radio] {
   float: left;
   width: auto;
@@ -408,18 +408,18 @@ input[type=radio] {
   padding: 0;
   line-height: 26px; }
 
-/* line 353, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 353, ../../Sass/_cake.generic.scss */
 .radio label {
   margin: 0 0 6px 20px;
   line-height: 26px; }
 
-/* line 357, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 357, ../../Sass/_cake.generic.scss */
 input[type=submit] {
   display: inline;
   font-size: 110%;
   width: auto; }
 
-/* line 362, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 362, ../../Sass/_cake.generic.scss */
 form .submit input[type=submit] {
   background: #62af56;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#76bf6b), to(#3b8230));
@@ -430,12 +430,12 @@ form .submit input[type=submit] {
   text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
   padding: 8px 10px; }
 
-/* line 372, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 372, ../../Sass/_cake.generic.scss */
 form .submit input[type=submit]:hover {
   background: #5BA150; }
 
 /* Form errors */
-/* line 376, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 376, ../../Sass/_cake.generic.scss */
 form .error {
   background: #FFDACC;
   -moz-border-radius: 4px;
@@ -443,7 +443,7 @@ form .error {
   border-radius: 4px;
   font-weight: normal; }
 
-/* line 383, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 383, ../../Sass/_cake.generic.scss */
 form .error-message {
   -moz-border-radius: none;
   -webkit-border-radius: none;
@@ -454,7 +454,7 @@ form .error-message {
   padding-left: 4px;
   padding-right: 0; }
 
-/* line 394, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 394, ../../Sass/_cake.generic.scss */
 form .error,
 form .error-message {
   color: #9E2424;
@@ -466,7 +466,7 @@ form .error-message {
   text-shadow: none; }
 
 /** Notices and Errors **/
-/* line 405, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 405, ../../Sass/_cake.generic.scss */
 .message {
   clear: both;
   color: #fff;
@@ -475,7 +475,7 @@ form .error-message {
   margin: 0 0 1em 0;
   padding: 5px; }
 
-/* line 420, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 420, ../../Sass/_cake.generic.scss */
 .success,
 .message,
 .cake-error,
@@ -504,7 +504,7 @@ p.error,
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25); }
 
-/* line 446, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 446, ../../Sass/_cake.generic.scss */
 .success,
 .message,
 .cake-error,
@@ -523,7 +523,7 @@ p.error,
   background-image: linear-gradient(top, #b21a26, #6f1018);
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
 
-/* line 462, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 462, ../../Sass/_cake.generic.scss */
 .success {
   clear: both;
   color: #fff;
@@ -538,19 +538,19 @@ p.error,
   background-image: linear-gradient(top, #6f8831, #41501d);
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
 
-/* line 478, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 478, ../../Sass/_cake.generic.scss */
 p.error {
   font-family: Monaco, Consolas, Courier, monospace;
   font-size: 120%;
   padding: 0.8em;
   margin: 1em 0; }
 
-/* line 484, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 484, ../../Sass/_cake.generic.scss */
 p.error em {
   font-weight: normal;
   line-height: 140%; }
 
-/* line 488, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 488, ../../Sass/_cake.generic.scss */
 .notice {
   color: #000;
   display: block;
@@ -558,17 +558,17 @@ p.error em {
   padding: 0.8em;
   margin: 1em 0; }
 
-/* line 495, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 495, ../../Sass/_cake.generic.scss */
 .success {
   color: #fff; }
 
 /**  Actions  **/
-/* line 500, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 500, ../../Sass/_cake.generic.scss */
 .actions ul {
   margin: -8px 0 0 -2px;
   padding: 0; }
 
-/* line 504, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 504, ../../Sass/_cake.generic.scss */
 .actions li {
   margin: 0 0 0.5em 0;
   list-style-type: none;
@@ -576,14 +576,13 @@ p.error em {
   padding: 0;
   display: inline-block; }
 
-/* line 511, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 511, ../../Sass/_cake.generic.scss */
 .actions ul li a {
   font-weight: normal;
-  display: block;
   clear: both; }
 
 /* Buttons and button links */
-/* line 520, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 519, ../../Sass/_cake.generic.scss */
 input[type=submit],
 .actions ul li a,
 .actions a {
@@ -610,14 +609,14 @@ input[type=submit],
   -webkit-user-select: none;
   user-select: none; }
 
-/* line 545, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 544, ../../Sass/_cake.generic.scss */
 .actions ul li a:hover,
 .actions a:hover {
   background: #ededed;
   border-color: #acacac;
   text-decoration: none; }
 
-/* line 552, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 551, ../../Sass/_cake.generic.scss */
 input[type=submit]:active,
 .actions ul li a:active,
 .actions a:active {
@@ -636,7 +635,7 @@ input[type=submit]:active,
   text-decoration: none; }
 
 /** Related **/
-/* line 569, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 568, ../../Sass/_cake.generic.scss */
 .related {
   clear: both;
   display: block;
@@ -644,7 +643,7 @@ input[type=submit]:active,
   padding: 10px 2%; }
 
 /** Debugging **/
-/* line 577, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 576, ../../Sass/_cake.generic.scss */
 pre {
   color: #000;
   background: #f0f0f0;
@@ -653,12 +652,12 @@ pre {
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
 
-/* line 585, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 584, ../../Sass/_cake.generic.scss */
 .cake-debug-output {
   padding: 0;
   position: relative; }
 
-/* line 589, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 588, ../../Sass/_cake.generic.scss */
 .cake-debug-output > span {
   position: absolute;
   top: 5px;
@@ -676,22 +675,22 @@ pre {
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.5);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); }
 
-/* line 607, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 606, ../../Sass/_cake.generic.scss */
 .cake-debug,
 .cake-error {
   font-size: 16px;
   line-height: 20px;
   clear: both; }
 
-/* line 612, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 611, ../../Sass/_cake.generic.scss */
 .cake-error > a {
   text-shadow: none; }
 
-/* line 615, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 614, ../../Sass/_cake.generic.scss */
 .cake-error {
   white-space: normal; }
 
-/* line 618, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 617, ../../Sass/_cake.generic.scss */
 .cake-stack-trace {
   background: rgba(255, 255, 255, 0.7);
   color: #333;
@@ -705,7 +704,7 @@ pre {
   -webkit-border-radius: 4px;
   border-radius: 4px; }
 
-/* line 631, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 630, ../../Sass/_cake.generic.scss */
 .cake-stack-trace a {
   text-shadow: none;
   background: rgba(255, 255, 255, 0.7);
@@ -723,16 +722,16 @@ pre {
   -webkit-box-shadow: inset 0px 1px 0 rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 1px 0 rgba(0, 0, 0, 0.3); }
 
-/* line 648, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 647, ../../Sass/_cake.generic.scss */
 .cake-code-dump pre {
   position: relative;
   overflow: auto; }
 
-/* line 652, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 651, ../../Sass/_cake.generic.scss */
 .cake-context {
   margin-bottom: 10px; }
 
-/* line 655, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 654, ../../Sass/_cake.generic.scss */
 .cake-stack-trace pre {
   color: #000;
   background-color: #F0F0F0;
@@ -741,7 +740,7 @@ pre {
   overflow: auto;
   text-shadow: none; }
 
-/* line 663, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 662, ../../Sass/_cake.generic.scss */
 .cake-stack-trace li {
   padding: 10px 5px 0px;
   margin: 0 0 4px 0;
@@ -759,7 +758,7 @@ pre {
   background-image: linear-gradient(top, #fefefe, #dcdcdc); }
 
 /* excerpt */
-/* line 681, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 680, ../../Sass/_cake.generic.scss */
 .cake-code-dump pre,
 .cake-code-dump pre code {
   clear: both;
@@ -769,30 +768,30 @@ pre {
   padding: 4px;
   overflow: auto; }
 
-/* line 689, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 688, ../../Sass/_cake.generic.scss */
 .cake-code-dump .code-highlight {
   display: block;
   background-color: rgba(255, 255, 0, 0.5); }
 
-/* line 693, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 692, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.code-line {
   padding-left: 5px;
   display: block;
   margin-left: 10px; }
 
-/* line 698, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 697, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.uncovered span.content {
   background: #ecc; }
 
-/* line 701, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 700, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.covered span.content {
   background: #cec; }
 
-/* line 704, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 703, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.ignored span.content {
   color: #aaa; }
 
-/* line 707, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 706, ../../Sass/_cake.generic.scss */
 .code-coverage-results span.line-num {
   color: #666;
   display: block;
@@ -801,49 +800,49 @@ pre {
   text-align: right;
   margin-right: 5px; }
 
-/* line 715, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 714, ../../Sass/_cake.generic.scss */
 .code-coverage-results span.line-num strong {
   color: #666; }
 
-/* line 718, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 717, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.start {
   border: 1px solid #aaa;
   border-width: 1px 1px 0px 1px;
   margin-top: 30px;
   padding-top: 5px; }
 
-/* line 724, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 723, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.end {
   border: 1px solid #aaa;
   border-width: 0px 1px 1px 1px;
   margin-bottom: 30px;
   padding-bottom: 5px; }
 
-/* line 730, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 729, ../../Sass/_cake.generic.scss */
 .code-coverage-results div.realstart {
   margin-top: 0px; }
 
-/* line 733, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 732, ../../Sass/_cake.generic.scss */
 .code-coverage-results p.note {
   color: #bbb;
   padding: 5px;
   margin: 5px 0 10px;
   font-size: 10px; }
 
-/* line 739, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 738, ../../Sass/_cake.generic.scss */
 .code-coverage-results span.result-bad {
   color: #a00; }
 
-/* line 742, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 741, ../../Sass/_cake.generic.scss */
 .code-coverage-results span.result-ok {
   color: #fa0; }
 
-/* line 745, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 744, ../../Sass/_cake.generic.scss */
 .code-coverage-results span.result-good {
   color: #0a0; }
 
 /** Elements **/
-/* line 750, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_cake.generic.scss */
+/* line 749, ../../Sass/_cake.generic.scss */
 #url-rewriting-warning {
   display: none; }
 
@@ -852,17 +851,13 @@ body {
   background: url('../img/bg-tile.jpg?1331605718') repeat; }
 
 /* line 14, ../../Sass/cugcdb.scss */
-#routing {
-  font-size: 20px; }
-
-/* line 18, ../../Sass/cugcdb.scss */
 #section_listing {
   width: 66%; }
-  /* line 20, ../../Sass/cugcdb.scss */
+  /* line 16, ../../Sass/cugcdb.scss */
   #section_listing ul li {
     display: block; }
 
-/* line 25, ../../Sass/cugcdb.scss */
+/* line 21, ../../Sass/cugcdb.scss */
 #login_logout {
   position: absolute;
   right: 20px;
@@ -870,34 +865,63 @@ body {
   font-size: 18px;
   color: #e6e6e6;
   text-decoration: none; }
-  /* line 32, ../../Sass/cugcdb.scss */
+  /* line 28, ../../Sass/cugcdb.scss */
   #login_logout:hover {
     color: #fff;
     text-decoration: underline; }
 
-/* line 38, ../../Sass/cugcdb.scss */
+/* line 34, ../../Sass/cugcdb.scss */
 .note {
   color: #aaa; }
-  /* line 40, ../../Sass/cugcdb.scss */
+  /* line 36, ../../Sass/cugcdb.scss */
   form .note {
     margin-top: -20px; }
 
-/* line 44, ../../Sass/cugcdb.scss */
+/* line 40, ../../Sass/cugcdb.scss */
 .add_field {
   display: block; }
-  /* line 46, ../../Sass/cugcdb.scss */
+  /* line 42, ../../Sass/cugcdb.scss */
   form .add_field {
     margin-top: -10px;
     clear: both;
     margin-bottom: .2em;
     padding: .5em; }
 
-/* line 54, ../../Sass/cugcdb.scss */
+/* line 50, ../../Sass/cugcdb.scss */
 .sub_field_bunch {
   margin-left: -0.5em; }
 
+/* line 54, ../../Sass/cugcdb.scss */
+.routing {
+  font-size: 20px;
+  min-width: 64%; }
+  /* line 57, ../../Sass/cugcdb.scss */
+  .routing li a {
+    display: block; }
+
+/* line 62, ../../Sass/cugcdb.scss */
+.removeButton {
+  color: red;
+  text-decoration: none;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-family: Arial;
+  position: relative;
+  left: 100%;
+  top: -2.25em;
+  display: block;
+  font-size: 140%;
+  padding: 1%; }
+  /* line 74, ../../Sass/cugcdb.scss */
+  .removeButton:hover {
+    color: red;
+    opacity: 1;
+    cursor: pointer;
+    display: block; }
+
 /**
  * Media queries to make this site mobile. 
+ * Found here: http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
  */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
@@ -911,47 +935,47 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen
 and (max-width : 320px) {
-  /* line 21, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+  /* line 22, ../../Sass/_media_queries.scss */
   #container {
     width: 100%; }
-    /* line 23, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+    /* line 24, ../../Sass/_media_queries.scss */
     #container #UserLoginForm {
       width: 95%; } }
 @media only screen
 and (max-width : 480px) {
-  /* line 30, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+  /* line 31, ../../Sass/_media_queries.scss */
   #container {
     width: 100%; }
-    /* line 32, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+    /* line 33, ../../Sass/_media_queries.scss */
     #container #content {
       width: 90%;
       padding: 2.5% 5% 8% 5%; }
-      /* line 35, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+      /* line 36, ../../Sass/_media_queries.scss */
       #container #content .message {
         width: 90%;
         margin: 2% 1%; }
-      /* line 39, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+      /* line 40, ../../Sass/_media_queries.scss */
       #container #content #UserLoginForm {
         width: 100%; }
-      /* line 42, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+      /* line 43, ../../Sass/_media_queries.scss */
       #container #content #section_listing {
         width: 100%;
         padding: 1% 1%; }
-      /* line 47, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+      /* line 48, ../../Sass/_media_queries.scss */
       #container #content .members.index .emails, #container #content .members.index .phone_numbers, #container #content .members.index .things_to_note {
         display: none; }
-      /* line 53, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+      /* line 54, ../../Sass/_media_queries.scss */
       #container #content #navigation ul li:nth-child(n+2) {
         display: none; }
-      /* line 56, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+      /* line 57, ../../Sass/_media_queries.scss */
       #container #content #navigation ul li {
         width: 100%; }
-        /* line 58, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+        /* line 59, ../../Sass/_media_queries.scss */
         #container #content #navigation ul li a {
           display: inline-block;
           width: 44%;
           font-size: 22px; }
-    /* line 66, /Users/parkermoore/Dropbox/Work/Glee Club Database/app/Sass/_media_queries.scss */
+    /* line 67, ../../Sass/_media_queries.scss */
     #container #footer {
       text-align: center; } }
 /* iPads (portrait and landscape) ----------- */

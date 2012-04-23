@@ -11,10 +11,6 @@ body {
 	background: image-url("bg-tile.jpg") repeat;
 }
 
-#routing {
-	font-size: 20px;
-}
-
 #section_listing {
 	width: 66%;
 	ul li {
@@ -54,5 +50,34 @@ body {
 .sub_field_bunch {
 	margin-left: -.5em;
 }
+
+.routing {
+	font-size: 20px;
+	min-width: 64%;
+	li a {
+		display: block;
+	}
+}
+
+.removeButton {
+	color: red;
+	text-decoration: none;
+	opacity: 0.5;
+	text-transform: uppercase;
+	font-family: Arial;
+	position: relative;
+	left: 100%;
+	top: -2.25em;
+	display: block;
+	font-size: 140%;
+	padding: 1%;
+	&:hover {
+		color: red;
+		opacity: 1;
+		cursor: pointer;
+		display: block;
+	}
+}
+
 
 @import "media_queries";

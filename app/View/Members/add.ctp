@@ -28,7 +28,7 @@
 		############################################################### Emails #########################################################################
 		################################################################################################################################################
 		echo $this->Html->tag('div', null, array('id' => 'emails', 'class' => 'sub_field_bunch'))."\n";
-		if($this->Form->data && $this->Form->data['Email'] && count($this->Form->data['Email']) > 0){
+		if($this->Form->data && isset($this->Form->data['Email']) && count($this->Form->data['Email']) > 0){
 			$e = 0;
 			for(; $e<count($this->Form->data['Email']); $e++){
 				echo $this->Form->input("Email.$e.email", array('label' => 'Email #'.($e+1)))."\n";
@@ -44,7 +44,7 @@
 		############################################################ Phone Numbers #####################################################################
 		################################################################################################################################################
 		echo $this->Html->tag('div', null, array('id' => 'phone_numbers', 'class' => 'sub_field_bunch'))."\n";
-		if($this->Form->data && $this->Form->data['PhoneNumber'] && count($this->Form->data['PhoneNumber']) > 0){
+		if($this->Form->data && isset($this->Form->data['PhoneNumber']) && count($this->Form->data['PhoneNumber']) > 0){
 			$e = 0;
 			for(; $e<count($this->Form->data['PhoneNumber']); $e++){
 				echo $this->Form->input("PhoneNumber.$e.phone_number", array('label' => 'Phone Number #'.($e+1)))."\n";
@@ -61,7 +61,7 @@
 		################################################################################################################################################
 		echo $this->Html->tag('div', null, array('id' => 'graduation_years', 'class' => 'sub_field_bunch'))."\n";
 		echo $this->Html->tag('h4', 'Graduation Years')."\n";
-		if($this->Form->data && $this->Form->data['GraduationYear'] && count($this->Form->data['GraduationYear']) > 0){
+		if($this->Form->data && isset($this->Form->data['GraduationYear']) && count($this->Form->data['GraduationYear']) > 0){
 			$e = 0;
 			for(; $e<count($this->Form->data['GraduationYear']); $e++){
 				echo $this->Form->input("GraduationYear.$e.degree", array('label' => 'Degree #'.($e+1)))."\n";
@@ -82,7 +82,7 @@
 		################################################################################################################################################
 		echo $this->Html->tag('div', null, array('id' => 'mailing_addresses', 'class' => 'sub_field_bunch'))."\n";
 		echo $this->Html->tag('h4', 'Mailing Addresses')."\n";
-		if($this->Form->data && $this->Form->data['MailingAddress'] && count($this->Form->data['MailingAddress']) > 0){
+		if($this->Form->data && isset($this->Form->data['MailingAddress']) && count($this->Form->data['MailingAddress']) > 0){
 			$e = 0;
 			for(; $e<count($this->Form->data['MailingAddress']); $e++){
 				echo $this->Form->input("MailingAddress.$e.street", array('type' => 'text', 'label' => 'Street #'.($e+1)))."\n";
@@ -107,7 +107,7 @@
 		################################################################################################################################################
 		echo $this->Html->tag('div', null, array('id' => 'occupations', 'class' => 'sub_field_bunch'))."\n";
 		echo $this->Html->tag('h4', 'Occupations')."\n";
-		if($this->Form->data && $this->Form->data['Occupation'] && count($this->Form->data['Occupation']) > 0){
+		if($this->Form->data && isset($this->Form->data['Occupation']) && count($this->Form->data['Occupation']) > 0){
 			$e = 0;
 			for(; $e<count($this->Form->data['Occupation']); $e++){
 				echo $this->Form->input("Occupation.$e.position", array('label' => 'Position #'.($e+1)))."\n";
@@ -126,7 +126,7 @@
 		################################################################################################################################################
 		echo $this->Html->tag('div', null, array('id' => 'officer_positions', 'class' => 'sub_field_bunch'))."\n";
 		echo $this->Html->tag('h4', 'Officer Positions')."\n";
-		if($this->Form->data && $this->Form->data['OfficerPosition'] && count($this->Form->data['OfficerPosition']) > 0){
+		if($this->Form->data && isset($this->Form->data['OfficerPosition']) && count($this->Form->data['OfficerPosition']) > 0){
 			$e = 0;
 			for(; $e<count($this->Form->data['OfficerPosition']); $e++){
 				echo $this->Form->input("OfficerPosition.$e.position", array('label' => 'Position #'.($e+1)))."\n";

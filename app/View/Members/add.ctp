@@ -5,6 +5,21 @@
 			<?php echo $this->Html->link(__('List Members'), array('action' => 'index'));?>
 			<?php echo $this->Html->link(__('Simple Add'), array('action' => 'simple_add'));?>
 		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Emails'), array('controller' => 'emails', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('List Graduation Years'), array('controller' => 'graduation_years', 'action' => 'index')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Mailing Addresses'), array('controller' => 'mailing_addresses', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('List Occupations'), array('controller' => 'occupations', 'action' => 'index')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Officer Positions'), array('controller' => 'officer_positions', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('List Phone Numbers'), array('controller' => 'phone_numbers', 'action' => 'index')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List International Tours'), array('controller' => 'intl_tours', 'action' => 'index')); ?>
+		</li>
 </div>
 <div class="members form">
 <?php echo $this->Form->create('Member');?>

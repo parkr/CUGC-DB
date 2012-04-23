@@ -79,5 +79,11 @@ body {
 	}
 }
 
+#navigation {
+	li a {
+		display: inline-block;	
+	}
+}
+
 
 @import "media_queries";

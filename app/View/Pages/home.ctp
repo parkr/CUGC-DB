@@ -26,6 +26,7 @@ $sub_sections = array(
 	'graduation_years',
 	'officer_positions',
 	'occupations',
+	'intl_tours'
 );
 foreach($sub_sections as $ss){
 	$sub_section_links[] = $this->Html->link(Inflector::humanize($ss), array('controller' => $ss));

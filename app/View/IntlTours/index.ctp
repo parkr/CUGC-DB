@@ -1,3 +1,25 @@
+<div class="actions" id="navigation">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li>
+			<?php echo $this->Html->link(__('New Intl Tour'), array('action' => 'add')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Emails'), array('controller' => 'emails', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('List Graduation Years'), array('controller' => 'graduation_years', 'action' => 'index')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Mailing Addresses'), array('controller' => 'mailing_addresses', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('List Occupations'), array('controller' => 'occupations', 'action' => 'index')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List Officer Positions'), array('controller' => 'officer_positions', 'action' => 'index')); ?>
+			<?php echo $this->Html->link(__('List Phone Numbers'), array('controller' => 'phone_numbers', 'action' => 'index')); ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link(__('List International Tours'), array('controller' => 'intl_tours', 'action' => 'index')); ?>
+		</li>
+</div>
 <div class="intlTours index">
 	<h2><?php echo __('Intl Tours');?></h2>
 	<table cellpadding="0" cellspacing="0">
@@ -33,12 +55,4 @@
 		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Intl Tour'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Members'), array('controller' => 'members', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Member'), array('controller' => 'members', 'action' => 'add')); ?> </li>
-	</ul>
 </div>

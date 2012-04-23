@@ -919,6 +919,10 @@ body {
     cursor: pointer;
     display: block; }
 
+/* line 83, ../../Sass/cugcdb.scss */
+#navigation li a {
+  display: inline-block; }
+
 /**
  * Media queries to make this site mobile. 
  * Found here: http://css-tricks.com/snippets/css/media-queries-for-standard-devices/

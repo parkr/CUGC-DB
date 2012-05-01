@@ -114,6 +114,48 @@ class MembersController extends AppController {
 		$this->redirect(array('action' => 'index'));
 	}
 	
+/**
+ * import method
+ *
+ * Allows for the importation of members and related info.
+ *
+ * @return void
+ */
+	public function import(){
+		if($this->request->is('post') || $this->request->is('put')){
+			$file = $this->request->data['Member']['import_file'];
+			if($file['error'] == 0){
+				if($file['type'] == "text/csv"){
+					// Upload.
+					$file['raw_path'] = dirname(__FILE__).'/../webroot/files/import/raw/'.time()."-".$file['name'];
+					if(move_uploaded_file($file['tmp_name'], $file['raw_path'])){
+						// Parse file!
+						$status = array('imported' => array(), 'unimported' => array());
+						$r = 0;
+						if(($handle = fopen($file['raw_path'], "r")) !== FALSE) {
+							while(($data = fgetcsv($handle)) !== FALSE) {
+								// $data is an array containing the info
+								if($r > 0){
+									$num = count($data);
+									$this->Member->saveAllInfoFromCSVRow($data);
+								}
+								$r++;
+						    }
+						    fclose($handle);
+						}
+					}else{
+						$this->Session->setFlash('Couldn\'t upload the file.');
+					}
+					pr($file);
+				}else{
+					$this->Session->setFlash('You must upload a CSV file.');
+				}
+			}else{
+				$this->Session->setFlash('There was some strange error uploading your file.');
+			}
+		}
+	}
+	
 	private function _parseMemberAssociatedFields($data){
 		// Parse emails
 		$emails = explode(',', $data['Email']['email']);

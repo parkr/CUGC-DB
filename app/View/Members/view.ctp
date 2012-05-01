@@ -52,7 +52,7 @@
 		</dd>
 		<dt><?php echo __('Middle Initial'); ?></dt>
 		<dd>
-			<?php echo h($member['Member']['middle_initial']); ?>
+			<?php echo h($member['Member']['middle']); ?>
 			&nbsp;
 		</dd>
 		

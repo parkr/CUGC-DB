@@ -39,6 +39,7 @@
 		echo $this->Form->input('first_name');
 		echo $this->Form->input('middle');
 		echo $this->Form->input('last_name');
+		echo $this->Form->input('suffix');
 		echo $this->Form->input('things_to_note');
 	?>
 	</fieldset>

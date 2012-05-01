@@ -55,10 +55,14 @@
 			<?php echo h($member['Member']['middle']); ?>
 			&nbsp;
 		</dd>
-		
 		<dt><?php echo __('Last Name'); ?></dt>
 		<dd>
 			<?php echo h($member['Member']['last_name']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Suffix'); ?></dt>
+		<dd>
+			<?php echo h($member['Member']['suffix']); ?>
 			&nbsp;
 		</dd>
 		<?php

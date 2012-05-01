@@ -39,6 +39,7 @@
 		echo $this->Form->input('first_name')."\n";
 		echo $this->Form->input('middle')."\n";
 		echo $this->Form->input('last_name')."\n";
+		echo $this->Form->input('suffix')."\n";
 		echo $this->Form->input('is_living', array('checked' => "checked"))."\n"."\n";
 		
 		################################################################################################################################################

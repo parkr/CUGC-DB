@@ -8,3 +8,6 @@
 .DS_Store
 tags
 /app/.sass-cache
+/app/webroot/files/import/raw
+/app/webroot/files/import/imported
+/app/webroot/files/import/unimported

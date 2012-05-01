@@ -40,11 +40,22 @@
 <div class="members view">
 <h2><?php  echo __('Member');?></h2>
 	<dl>
+		<dt><?php echo __('Title'); ?></dt>
+		<dd>
+			<?php echo h($member['Member']['title']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('First Name'); ?></dt>
 		<dd>
 			<?php echo h($member['Member']['first_name']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Middle Initial'); ?></dt>
+		<dd>
+			<?php echo h($member['Member']['middle_initial']); ?>
+			&nbsp;
+		</dd>
+		
 		<dt><?php echo __('Last Name'); ?></dt>
 		<dd>
 			<?php echo h($member['Member']['last_name']); ?>

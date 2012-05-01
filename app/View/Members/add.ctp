@@ -35,8 +35,9 @@
 			'officer_positions' => 0,
 			'phone_numbers' => 0
 		);
-	
+		echo $this->Form->input('title')."\n";
 		echo $this->Form->input('first_name')."\n";
+		echo $this->Form->input('middle_initial', array('length' => 5))."\n";
 		echo $this->Form->input('last_name')."\n";
 		echo $this->Form->input('is_living', array('checked' => "checked"))."\n"."\n";
 		

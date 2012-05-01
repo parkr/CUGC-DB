@@ -27,8 +27,9 @@
 	<fieldset>
 		<legend><?php echo __('Edit Member'); ?></legend>
 	<?php
-		echo $this->Form->input('id');
+		echo $this->Form->input('title');
 		echo $this->Form->input('first_name');
+		echo $this->Form->input('middle_initial');
 		echo $this->Form->input('last_name');
 		echo $this->Form->input('is_living', array('checked' => "checked"));
 		echo $this->Form->input('things_to_note');

@@ -337,7 +337,7 @@ class Member extends AppModel {
 						$member["Member"]['first_name'] = $pieces[1];
 						$member["Member"]['middle'] = $pieces[2];
 						$member["Member"]['last_name'] = $pieces[3];
-						$member["Member"]['suffix'] = $pieces[4];	
+						$member["Member"]['suffix'] = $pieces[4];
 					}else{
 						$member["Member"]['first_name'] = $pieces[0];
 						$member["Member"]['middle'] = $pieces[1];
@@ -369,21 +369,19 @@ class Member extends AppModel {
 					$member["Member"]['middle'] = $pieces[1];
 					$member["Member"]['last_name'] = $pieces[2];
 					$member["Member"]['suffix'] = $pieces[3];
-					return $member;
 				}else{
 					if(in_array($pieces[0], $this->namePrefixes)){
 						$member["Member"]['title'] = $pieces[0];
 						$member["Member"]['first_name'] = $pieces[1];
 						$member["Member"]['middle'] = $pieces[2];
 						$member["Member"]['last_name'] = $pieces[3];
-						return $member;
 					}else{
 						// Two last names or two middle names! No way to tell.
 						$member["Member"]['last_name'] = $pieces[3];
 						$member["Member"]['first_name'] = implode(" ", array_slice($pieces, 0, 3));
-						return $member;
 					}
 				}
+				return $member;
 			case 3:
 				// John William Doe
 				// Mr John Doe
@@ -392,27 +390,24 @@ class Member extends AppModel {
 					$member["Member"]['first_name'] = $pieces[0];
 					$member["Member"]['last_name'] = $pieces[1];
 					$member["Member"]['suffix'] = $pieces[2];
-					return $member;
 				}else{
 					if(in_array($pieces[0], $this->namePrefixes)){
 						$member["Member"]['title'] = $pieces[0];
 						$member["Member"]['first_name'] = $pieces[1];
 						$member["Member"]['last_name'] = $pieces[2];
-						return $member;
 					}else{
 						// Two last names or two middle names! No way to tell.
 						$member["Member"]['first_name'] = $pieces[0];
 						$member["Member"]['middle'] = $pieces[1];
 						$member["Member"]['last_name'] = $pieces[2];
-						return $member;
 					}
 				}
+				return $member;
 			case 2:
 				// John Doe
 				$member["Member"]['first_name'] = $pieces[0];
 				$member["Member"]['last_name'] = $pieces[1];
 				return $member;
-			
 		}
 	}
 

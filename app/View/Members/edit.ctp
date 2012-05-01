@@ -27,6 +27,7 @@
 	<fieldset>
 		<legend><?php echo __('Edit Member'); ?></legend>
 	<?php
+		echo $this->Form->input('id');
 		echo $this->Form->input('title');
 		echo $this->Form->input('first_name');
 		echo $this->Form->input('middle');
